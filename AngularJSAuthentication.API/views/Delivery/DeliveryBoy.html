@@ -1,0 +1,320 @@
+﻿<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading"> <strong> <span class="glyphicon glyphicon-th"> </span> Deliveryboy table</strong> </div>
+        <br />
+        <div>
+            <button class="btn btn-primary" ng-click="open()"> <span class="glyphicon glyphicon-plus"> </span> Add Deliveryboy</button>
+            </div>
+        <br />
+        <div class="table-filters">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6"> 
+                <form> 
+                    <input type="text" placeholder="search" class="form-control" data-ng-model="searchKeywords" data-ng-keyup="search()"> 
+                </form>
+                 </div> <div class="col-sm-3 col-xs-6 filter-result-info">
+                    <span>
+                        Showing {{filteredStores.length}}/{{stores.length}} entries
+                    </span>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="th">
+                            First Name
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('DeliveryboyFirstName')"
+                                  data-ng-class="{active: row == 'DeliveryboyFirstName'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-DeliveryboyFirstName')"
+                                  data-ng-class="{active: row == '-DeliveryboyFirstName'}"></span>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="th">
+                            Last Name
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('DeliveryboyLastName')"
+                                  data-ng-class="{active: row == 'DeliveryboyLastName'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-DeliveryboyLastName')"
+                                  data-ng-class="{active: row == '-DeliveryboyLastName'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Mobile Number
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('Mobile')"
+                                  data-ng-class="{active: row == 'Mobile'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-Mobile')"
+                                  data-ng-class="{active: row == '-Mobile'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Vehicle Assigned
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('Email')"
+                                  data-ng-class="{active: row == 'Email'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-Email')"
+                                  data-ng-class="{active: row == '-Email'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Active
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('Active')"
+                                  data-ng-class="{active: row == 'Active'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-Active')"
+                                  data-ng-class="{active: row == '-Active'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Created Date
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('CreatedDate')"
+                                  data-ng-class="{active: row == 'CreatedDate'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-CreatedDate')"
+                                  data-ng-class="{active: row == '-CreatedDate'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Edit
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Delete
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="trade in currentPageStores">
+                    <td>{{trade.PeopleFirstName}}</td>
+                    <td>{{trade.PeopleLastName}}</td>
+                    <td>{{trade.Mobile}}</td>
+                    <td>{{trade.VehicleName}}-{{trade.VehicleNumber}}</td>
+                    <td>{{trade.Active}}</td>
+                    <td>{{trade.CreatedDate | date:'medium'}}</td>
+                    <td><button class="btn-sm btn-primary" ng-click="edit(trade)">Edit</button> </td>
+                    <td><button class="btn-sm btn-danger" ng-click="opendelete(trade,$index)">Remove</button> </td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="table-footer">
+            <div class="row">
+                <div class="col-md-6 page-num-info">
+                    <span>
+                        Show
+                        <select data-ng-model="numPerPage"
+                                data-ng-options="num for num in numPerPageOpt"
+                                data-ng-change="onNumPerPageChange()"></select>
+                        entries per page
+                    </span>
+                </div>
+                <div class="col-md-6 text-right pagination-container">
+                    <pagination class="pagination-sm"
+                                page="currentPage"
+                                total-items="filteredStores.length"
+                                max-size="4"
+                                on-select-page="select(page)"
+                                items-per-page="numPerPage"
+                                rotate="false"
+                                boundary-links="true"></pagination>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+<!-- /site tiles -->
+<!-- new site modal -->
+<script type="text/ng-template" id="myDeliveryboyModal.html">
+
+    <form name="myFormSiteModal">
+
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal"><span class="icon icon-x" aria-hidden="true"></span><span class="sr-only">Close</span></button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Add Deliveryboy</h4>
+
+        </div>
+        <div class="modal-body">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+
+            <div class="form-group">
+                <label for="site-name">First Name:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.PeopleFirstName" placeholder="Enter First Name" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Last Name:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.PeopleLastName" placeholder="Enter Last Name" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Mobile:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.Mobile" placeholder="Enter Mobile" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Password:</label><br />
+                <input id="site-name" type="password" class="form-control" ng-model="DeliveryboyData.Password" placeholder="Enter Password" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select State:</label><br />
+                <select class="form-control" id="site-name" ng-model="DeliveryboyData.Stateid" required>
+                    <option value="">---SELECT---</option>
+                    <option value="{{state.Stateid}}" ng-repeat="state in states" ng-click="showDetails = ! showDetails"> {{state.StateName}}</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select City:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Stateid" ng-model="DeliveryboyData.Cityid">
+                    <option value="">---SELECT---</option>
+                    <option value="{{city.Cityid}}" ng-repeat="city in citys| filter:{Stateid:DeliveryboyData.Stateid}"> {{city.CityName}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select warehouse:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Cityid" ng-model="DeliveryboyData.Warehouseid">
+                    <option value="">---SELECT---</option>
+                    <option value="{{w.Warehouseid}}" ng-repeat="w in warehouse| filter:{Cityid:DeliveryboyData.Cityid}"> {{w.WarehouseName}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select Vehicle:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Cityid" ng-model="DeliveryboyData.VehicleId">
+                    <option value="">---SELECT---</option>
+                    <option value="{{v.VehicleId}}" ng-repeat="v in Vehicles"> {{v.VehicleName}} - {{v.VehicleNumber}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">IsActive:</label><br />
+                <input id="site-name" type="checkbox" class="form-control" ng-model="DeliveryboyData.Active" placeholder="Enter VehicleData" />
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="AddDeliveryboy(DeliveryboyData)">Save</button>
+        </div>
+    </form>
+</script>
+
+
+
+<!--Update Deliveryboy-->
+<script type="text/ng-template" id="myDeliveryboyModalPut.html">
+
+    <form name="myFormSiteModal">
+
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal"><span class="icon icon-x" aria-hidden="true"></span><span class="sr-only">Close</span></button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Edit Deliveryboy</h4>
+
+        </div>
+        <div class="modal-body">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+
+            <div class="form-group">
+                <label for="site-name">First Name:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.PeopleFirstName" placeholder="Enter First Name" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Last Name:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.PeopleLastName" placeholder="Enter Last Name" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Mobile:</label><br />
+                <input id="site-name" type="text" class="form-control" ng-model="DeliveryboyData.Mobile" placeholder="Enter Mobile" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Password:</label><br />
+                <input id="site-name" type="password" class="form-control" ng-model="DeliveryboyData.Password" placeholder="Enter Password" />
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select State:</label><br />
+                <select class="form-control" id="site-name" ng-model="DeliveryboyData.Stateid" required>
+                    <option value="">{{DeliveryboyData.state}}</option>
+                    <option value="{{state.Stateid}}" ng-repeat="state in states" ng-click="showDetails = ! showDetails"> {{state.StateName}}</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select City:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Stateid" ng-model="DeliveryboyData.Cityid">
+                    <option value="{{city.Cityid}}" ng-selected="city.Cityid == DeliveryboyData.Cityid" ng-repeat="city in citys| filter:{Stateid:DeliveryboyData.Stateid}"> {{city.CityName}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select warehouse:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Cityid" ng-model="DeliveryboyData.Warehouseid">
+                    <option value="">-Select-</option>
+                    <option value="{{w.Warehouseid}}" ng-selected="w.Warehouseid == DeliveryboyData.Warehouseid" ng-repeat="w in warehouse| filter:{Cityid:DeliveryboyData.Cityid}"> {{w.WarehouseName}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">Select Vehicle:</label><br />
+                <select class="form-control" id="site-name" data-ng-disabled="!DeliveryboyData.Cityid" ng-model="DeliveryboyData.VehicleId">
+                    <option value="{{v.VehicleId}}"  ng-selected="c.VehicleId == DeliveryboyData.VehicleId" ng-repeat="v in Vehicles"> {{v.VehicleName}} - {{v.VehicleNumber}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="site-name">IsActive:</label><br />
+                <input id="site-name" type="checkbox" class="form-control" ng-model="DeliveryboyData.Active" placeholder="Enter VehicleData" />
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="PutDeliveryboy(DeliveryboyData)">Save</button>
+        </div>
+    </form>
+</script>
+
+
+<!-- /new site modal -->
+
+<script type="text/ng-template" id="myModaldeletedeliveryboy.html">
+
+    <form name="myFormTaskTypeModal1">
+
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Delete Deliveryboy</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="TaskType-name">Are you sure you want to Delete?</label><br />
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">No</button>
+            <button type="submit" class="btn btn-ar btn-primary" ng-click="deletedeliveryboys(DeliveryboyData,$index)">Yes</button>
+        </div>
+    </form>
+</script>

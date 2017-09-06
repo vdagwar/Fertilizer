@@ -1,0 +1,114 @@
+﻿<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong><span class="glyphicon glyphicon-th"></span> Not Ordered Customer  </strong>
+        </div>
+        <div class="form-group col-md-12 clear-both">
+            <div class="form-group col-md-3">
+                <label for="site-name">SKcode</label><br>
+                <input class="form-control" ng-model="skcode" placeholder="Enter Sk code" />
+            </div>
+            <div class="form-group col-md-3">
+                <label for="site-name">Select Date Range</label><br />
+                <div class="form-group">
+                    <div class='input-group date'>
+                        <input name="daterange" id="dat" type='text'  title="Select Date" class="form-control date-picker" />
+                        <span class="input-group-addon ">
+                            <span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                </div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="site-name"></label><br />
+                <button type="button" class="btn btn-ar btn-primary" ng-click="Search()">Search</button>
+                <label for="site-name"></label><br />
+                <button type="button" class="btn btn-ar btn-primary" ng-click="getNotorderddata()">Refresh</button>
+            </div>
+          
+            <div class="form-group col-md-3">
+                <label for="site-name"></label><br />
+                <button class="btn-sm btn-primary" ng-click="exportData()"> <span class="glyphicon glyphicon-plus"> </span> Export  List</button>
+  </div>
+        </div>
+       
+       <table class="table table-bordered table-responsive ">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="th">
+                                    No.
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Sales Person
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    SKCODE
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Shop Name
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Status
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Comment
+                                </div>
+                            </th>
+                            
+                            <th>
+                                <div class="th">
+                                    Date
+                                </div>
+                            </th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="trade in currentPageStores | orderBy:'id':true"> 
+                            <td>{{1+$index}}</td>
+                            <td>{{trade.SalespersonName}}</td>
+                            <td>{{trade.Skcode}}</td>
+                            <td>{{trade.ShopName}}</td>
+                            <td>{{trade.status}}</td>
+                            <td>{{trade.Comment}}</td>
+                            <td>{{trade.CreatedDate |date:'medium'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+        <footer class="table-footer">
+            <div class="row">
+                <div class="col-md-6 page-num-info">
+                    <span>
+                        Show
+                        <select data-ng-model="numPerPage"
+                                data-ng-options="num for num in numPerPageOpt"
+                                data-ng-change="onNumPerPageChange()"></select>
+                        entries per page
+                    </span>
+                </div>
+                <div class="col-md-6 text-right pagination-container">
+                    <pagination class="pagination-sm"
+                                page="currentPage"
+                                total-items="filteredStores.length"
+                                max-size="4"
+                                on-select-page="select(page)"
+                                items-per-page="numPerPage"
+                                rotate="false"
+                                boundary-links="true"></pagination>
+                </div>
+            </div>
+        </footer> 
+    </section>
+</div>

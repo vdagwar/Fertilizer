@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33141331-A9F8-4419-9FD2-9D52EC18043B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularJSAuthentication.Model</RootNamespace>
+    <AssemblyName>AngularJSAuthentication.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.0\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckCurrency.cs" />
+    <Compile Include="CurrencyBankSettle.cs" />
+    <Compile Include="CurrencyHistory.cs" />
+    <Compile Include="CurrencyStock.cs" />
+    <Compile Include="DamageStock.cs" />
+    <Compile Include="DamageOrderMaster.cs" />
+    <Compile Include="DamageOrderDetails.cs" />
+    <Compile Include="DBoyCurrency.cs" />
+    <Compile Include="ReqService.cs" />
+    <Compile Include="ActionTask.cs" />
+    <Compile Include="AllInvoice.cs" />
+    <Compile Include="ApplicationIdNotification.cs" />
+    <Compile Include="Area.cs" />
+    <Compile Include="BarCode39.cs" />
+    <Compile Include="barcodecs.cs" />
+    <Compile Include="BarCodeModel.cs" />
+    <Compile Include="BaseCategory.cs" />
+    <Compile Include="CustomerIssue.cs" />
+    <Compile Include="DreamItem.cs" />
+    <Compile Include="EditPriceHistory.cs" />
+    <Compile Include="ItemMasterHistory.cs" />
+    <Compile Include="RewardItems.cs" />
+    <Compile Include="Rewardpoint.cs" />
+    <Compile Include="UnitEconomic.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="AvgInventory.cs" />
+    <Compile Include="DboyDeliveryOrders.cs" />
+    <Compile Include="DBoySummary.cs" />
+    <Compile Include="DeliveryCharges.cs" />
+    <Compile Include="DeliveryIssuance.cs" />
+    <Compile Include="FreeItem.cs" />
+    <Compile Include="Offer.cs" />
+    <Compile Include="PurchaseReturn.cs" />
+    <Compile Include="GpsCoordinate.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="Cluster.cs" />
+    <Compile Include="Coupon.cs" />
+    <Compile Include="CurrentStock.cs" />
+    <Compile Include="CustomerCategory.cs" />
+    <Compile Include="CustomerDetails.cs" />
+    <Compile Include="CustomerProfile.cs" />
+    <Compile Include="CustomerRegistration.cs" />
+    <Compile Include="DailyEssential.cs" />
+    <Compile Include="DailyItemEdit.cs" />
+    <Compile Include="DemandDetails.cs" />
+    <Compile Include="DemandDetailsNew.cs" />
+    <Compile Include="DemandMaster.cs" />
+    <Compile Include="DeviceNotification.cs" />
+    <Compile Include="Division.cs" />
+    <Compile Include="BillPramotion.cs" />
+    <Compile Include="GroupNotification.cs" />
+    <Compile Include="ItemPrice.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Favorites.cs" />
+    <Compile Include="Feedback.cs" />
+    <Compile Include="FinancialYear.cs" />
+    <Compile Include="ItemBrand.cs" />
+    <Compile Include="ItemCategory.cs" />
+    <Compile Include="ItemCollection.cs" />
+    <Compile Include="Itemsappdata.cs" />
+    <Compile Include="ItemMaster.cs" />
+    <Compile Include="ItemMasterView.cs" />
+    <Compile Include="ItemPramotions.cs" />
+    <Compile Include="itemselected.cs" />
+    <Compile Include="MoveWarehouse.cs" />
+    <Compile Include="data.cs" />
+    <Compile Include="FinalOrderDispatchedDetails.cs" />
+    <Compile Include="FinalOrderDispatchedMaster.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="NotificationByDeviceId.cs" />
+    <Compile Include="OrderHistory.cs" />
+    <Compile Include="PaggingData.cs" />
+    <Compile Include="RedispatchWarehouse.cs" />
+    <Compile Include="ReturnOrderDispatchedDetails.cs" />
+    <Compile Include="OrderDispatchedDetails.cs" />
+    <Compile Include="OrderDetails.cs" />
+    <Compile Include="OrderDispatchedMaster.cs" />
+    <Compile Include="OrderMaster.cs" />
+    <Compile Include="OrderNotes.cs" />
+    <Compile Include="PurchaseOrderRecived.cs" />
+    <Compile Include="PurchaseOrder.cs" />
+    <Compile Include="PurchaseOrderRecivedList.cs" />
+    <Compile Include="PurchaseOrderList.cs" />
+    <Compile Include="RequestItem.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="SalesPersonBeat.cs" />
+    <Compile Include="ShoppingCart.cs" />
+    <Compile Include="ShortSetttle.cs" />
+    <Compile Include="Slider.cs" />
+    <Compile Include="State.cs" />
+    <Compile Include="SubCategory.cs" />
+    <Compile Include="SubsubCategory.cs" />
+    <Compile Include="AssetsCategory.cs" />
+    <Compile Include="Assets.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="ExternalLoginModels.cs" />
+    <Compile Include="InvoiceRow.cs" />
+    <Compile Include="Leave.cs" />
+    <Compile Include="NotMapped\ClientProject.cs" />
+    <Compile Include="People.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefreshToken.cs" />
+    <Compile Include="setting.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierCategory.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskType.cs" />
+    <Compile Include="TaxGroup.cs" />
+    <Compile Include="TaxGroupDetails.cs" />
+    <Compile Include="TaxMaster.cs" />
+    <Compile Include="TFSTask.cs" />
+    <Compile Include="TravelRequest.cs" />
+    <Compile Include="TrnMoveStock.cs" />
+    <Compile Include="TrnPurchaseDeliver.cs" />
+    <Compile Include="TrnPurchaseDeliveryDetail.cs" />
+    <Compile Include="TrnPurchaseInvoice.cs" />
+    <Compile Include="TrnPurchaseInvoiceDetail.cs" />
+    <Compile Include="TrnPurchaseOrder.cs" />
+    <Compile Include="TrnPurchaseOrderDetail.cs" />
+    <Compile Include="TrnPurchaseOrderDetailReturn.cs" />
+    <Compile Include="TrnPurchaseOrderReturn.cs" />
+    <Compile Include="TrnSaleInvoice.cs" />
+    <Compile Include="TrnSaleInvoiceDetail.cs" />
+    <Compile Include="TrnSaleOrder.cs" />
+    <Compile Include="TrnSaleOrderDetail.cs" />
+    <Compile Include="TrnStock.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserModel.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="Video.cs" />
+    <Compile Include="DayEventViewModel.cs" />
+    <Compile Include="MonthEventViewModel.cs" />
+    <Compile Include="Wallet.cs" />
+    <Compile Include="Warehouse.cs" />
+    <Compile Include="WarehouseCategory .cs" />
+    <Compile Include="WarehouseSubsubCategory.cs" />
+    <Compile Include="WarehouseSupplier.cs" />
+    <Compile Include="WarhouseSubCategory.cs" />
+    <Compile Include="WeekEventViewModel.cs" />
+    <Compile Include="WeekTaskEventViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config" />
+    <None Include="fonts\Englisharial.eot" />
+    <None Include="fonts\Englisharial.ttf" />
+    <None Include="fonts\FREE3OF9.TTF" />
+    <None Include="fonts\frscript.eot" />
+    <None Include="fonts\frscript.TTF" />
+    <None Include="fonts\Hindimfdev010.eot" />
+    <None Include="fonts\Hindimfdev010.ttf" />
+    <None Include="fonts\MARmith0.eot" />
+    <None Include="fonts\MARmith0.ttf" />
+    <None Include="fonts\mfdev010.eot" />
+    <None Include="fonts\mfdev010.ttf" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

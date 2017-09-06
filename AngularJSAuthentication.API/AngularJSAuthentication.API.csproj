@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23DFCFD5-B158-4C0D-9C31-5E9CB64C64CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularJSAuthentication.API</RootNamespace>
+    <AssemblyName>AngularJSAuthentication.API</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.0.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=6.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Core.6.14.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.OData.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=6.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Edm.6.14.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.OData.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors">
+      <HintPath>..\packages\Microsoft.Owin.Cors.2.1.0\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=6.14.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Spatial.6.14.0\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Services.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\nuget-bot.Microsoft.VisualStudio.Services.Common.12.0.21005.1\lib\net45\Microsoft.VisualStudio.Services.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Services.WebApi, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\nuget-bot.Microsoft.VisualStudio.Services.WebApi.12.0.21005.1\lib\net45\Microsoft.VisualStudio.Services.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.0\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Remoting">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.6.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.5.7.0\lib\net45\System.Web.Http.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.0\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.OData, Version=5.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.OData.5.8.0\lib\net45\System.Web.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="akash.png" />
+    <Content Include="bower_components\font-awesome\css\font-awesome.css" />
+    <Content Include="bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="bower_components\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="bower_components\weather-icons\css\weather-icons.css" />
+    <Content Include="bower_components\weather-icons\css\weather-icons.min.css" />
+    <Content Include="bower_components\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="ConfirmEmail.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\daterangepicker-bs2.css" />
+    <Content Include="Content\daterangepicker-bs3.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\ng-table.css" />
+    <Content Include="ControllersReports\delboy.png" />
+    <Content Include="ControllersReports\green-dot.png" />
+    <Content Include="controller\BankSettleController.js" />
+    <Content Include="controller\CurrencySettleController.js" />
+    <Content Include="controller\CurrencyStockController.js" />
+    <Content Include="controller\ExcelOrderCtrl.js" />
+    <Content Include="controller\NotOrderedController.js" />
+    <Content Include="controller\DamageorderdetailsController.js" />
+    <Content Include="controller\OrederProcessReportController.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\280512_11_05_2012_072-compressed.jpg" />
+    <Content Include="images\assets\600_400-1.jpg" />
+    <Content Include="images\assets\600_400-2.jpg" />
+    <Content Include="images\background\1.jpg" />
+    <Content Include="images\background\2.jpg" />
+    <Content Include="images\background\3.jpg" />
+    <Content Include="images\background\4.jpg" />
+    <Content Include="images\background\5.jpg" />
+    <Content Include="images\defaultImage.jpg" />
+    <Content Include="images\grocery-and-staples-1000x500-compressed.jpg" />
+    <Content Include="images\Grocery-Store-Organic-Produce-compressed.jpg" />
+    <Content Include="images\logo.PNG" />
+    <Content Include="images\profile.jpg" />
+    <Content Include="images\RewardItem\delboy.png" />
+    <Content Include="services\CurrencyStockService.js" />
+    <Content Include="views\CurrencyModule\BankSettle.html" />
+    <Content Include="views\CurrencyModule\Currency.html" />
+    <Content Include="views\CurrencyStock\CurrencyStock.html" />
+    <Content Include="views\DamageStock\DamageorderMasterController.js" />
+    <Content Include="controller\PopUpController.js" />
+    <Content Include="controller\AddInvoiceController.js" />
+    <Content Include="controller\AreaMasterController.js" />
+    <Content Include="controller\AsignDayController.js" />
+    <Content Include="controller\assetsCategoryController.js" />
+    <Content Include="controller\assetsController.js" />
+    <Content Include="controller\associateController.js" />
+    <Content Include="controller\BounceCheqController.js" />
+    <Content Include="controller\calenderController.js" />
+    <Content Include="controller\basecategoryController.js" />
+    <Content Include="controller\ChangeDBoyCtrl.js" />
+    <Content Include="controller\CustomerIssueController.js" />
+    <Content Include="controller\CustomerReportController.js" />
+    <Content Include="controller\IRController.js" />
+    <Content Include="controller\IRSupplierController.js" />
+    <Content Include="controller\logoutController.js" />
+    <Content Include="controller\MilestonePointController.js" />
+    <Content Include="controller\NppHistoryPriceController.js" />
+    <Content Include="controller\orderdetailsController.js" />
+    <Content Include="controller\ReqServiceController.js" />
+    <Content Include="controller\supplierPromo.js" />
+    <Content Include="controller\RedeemOrderCtrl.js" />
+    <Content Include="controller\RewardItemCtrl.js" />
+    <Content Include="controller\OfferController.js" />
+    <Content Include="controller\promItemController.js" />
+    <Content Include="controller\RewardPointController.js" />
+    <Content Include="controller\SalesSettlementHistoryController.js" />
+    <Content Include="controller\ReturnItemCtrl.js" />
+    <Content Include="controller\ShortageSettleController.js" />
+    <Content Include="controller\targetController.js" />
+    <Content Include="controller\SuggetionContoller.js" />
+    <Content Include="controller\orderPendingController.js" />
+    <Content Include="controller\VehicleAssissmentController.js" />
+    <Content Include="controller\WalletController.js" />
+    <Content Include="CRM\Action.html" />
+    <Content Include="CRM\ActionController.js" />
+    <Content Include="CRM\CRM.html" />
+    <Content Include="CRM\CRMCtrl.js" />
+    <Content Include="CRM\CRMcust4Action.html" />
+    <Content Include="CRM\CRMcust4ActionCtrl.js" />
+    <Content Include="CRM\NetProfit.html" />
+    <Content Include="CRM\NetprofitController.js" />
+    <Content Include="ReportsControllers\DashboardReportController.js" />
+    <Content Include="controller\DeliveryBoyController.js" />
+    <Content Include="controller\DeliveryBoyHistoryController.js" />
+    <Content Include="controller\deliveryChargeController.js" />
+    <Content Include="controller\categoryController.js" />
+    <Content Include="controller\clusterController.js" />
+    <Content Include="controller\CouponController.js" />
+    <Content Include="controller\DeliveryController.js" />
+    <Content Include="controller\NewsController.js" />
+    <Content Include="controller\CurrentStockController.js" />
+    <Content Include="controller\cityController.js" />
+    <Content Include="controller\clientdashboardController.js" />
+    <Content Include="controller\ConfigureController.js" />
+    <Content Include="controller\confirmEmailController.js" />
+    <Content Include="controller\CopyItemController.js" />
+    <Content Include="controller\createRecurringInvoiceController.js" />
+    <Content Include="controller\customerCategoryController.js" />
+    <Content Include="controller\AuthcustomerController.js" />
+    <Content Include="controller\customerController.js" />
+    <Content Include="controller\dashboardController.js" />
+    <Content Include="controller\daytasktimesheetController.js" />
+    <Content Include="controller\daytimesheetController.js" />
+    <Content Include="controller\DemandController.js" />
+    <Content Include="controller\editPriceController.js" />
+    <Content Include="controller\FilterItemsController.js" />
+    <Content Include="controller\FinancialYearController.js" />
+    <Content Include="controller\GroupNotificationController.js" />
+    <Content Include="controller\headerController.js" />
+    <Content Include="controller\homeController.js" />
+    <Content Include="controller\indexController.js" />
+    <Content Include="controller\invoiceController.js" />
+    <Content Include="controller\invoicemoreyeahController.js" />
+    <Content Include="controller\itembrandController.js" />
+    <Content Include="controller\itemCategoryController.js" />
+    <Content Include="controller\itemMasterController.js" />
+    <Content Include="controller\BillPramotionController.js" />
+    <Content Include="controller\ItemPramotionController.js" />
+    <Content Include="controller\leavesController.js" />
+    <Content Include="controller\loginController.js" />
+    <Content Include="controller\mappController.js" />
+    <Content Include="controller\menuController.js" />
+    <Content Include="controller\MessageController.js" />
+    <Content Include="controller\modelpopupController.js" />
+    <Content Include="controller\monthtimesheetController.js" />
+    <Content Include="controller\multiController.js" />
+    <Content Include="controller\multipleimageController.js" />
+    <Content Include="controller\NotificationByDeviceIdController.js" />
+    <Content Include="controller\NotificationController.js" />
+    <Content Include="controller\o365dashboardController.js" />
+    <Content Include="controller\RedispatchCtrl.js" />
+    <Content Include="controller\OrderPaymentReportController.js" />
+    <Content Include="controller\OrderSettleController.js" />
+    <Content Include="controller\SalesBounceController.js" />
+    <Content Include="controller\SalesSettlementController.js" />
+    <Content Include="controller\ReturnOrderdetailsController.js" />
+    <Content Include="controller\OrderInvoiceController.js" />
+    <Content Include="controller\orderMasterController.js" />
+    <Content Include="controller\ordersController.js" />
+    <Content Include="controller\peoplesController.js" />
+    <Content Include="controller\profilesController.js" />
+    <Content Include="controller\projectdashboardController.js" />
+    <Content Include="controller\projectsController.js" />
+    <Content Include="controller\projectsTaskController.js" />
+    <Content Include="controller\PurchaseOrderListController.js" />
+    <Content Include="controller\purchaseorderController.js" />
+    <Content Include="controller\refreshController.js" />
+    <Content Include="controller\reportsController.js" />
+    <Content Include="controller\roleController.js" />
+    <Content Include="controller\searchPOController.js" />
+    <Content Include="controller\GoodsRecivedController.js" />
+    <Content Include="controller\SearchPODetailsController.js" />
+    <Content Include="controller\settingController.js" />
+    <Content Include="controller\signupController.js" />
+    <Content Include="controller\SliderCtrl.js" />
+    <Content Include="controller\stateController.js" />
+    <Content Include="controller\subcategoryController.js" />
+    <Content Include="controller\subsubCategoryController.js" />
+    <Content Include="controller\supplierCategoryController.js" />
+    <Content Include="controller\supplierController.js" />
+    <Content Include="controller\taskdashboardController.js" />
+    <Content Include="controller\tasksController.js" />
+    <Content Include="controller\tasktypesController.js" />
+    <Content Include="controller\TaxGroupController.js" />
+    <Content Include="controller\TaxmasterController.js" />
+    <Content Include="controller\TFSController.js" />
+    <Content Include="controller\tokensManagerController.js" />
+    <Content Include="controller\travelRequestController.js" />
+    <Content Include="controller\typeaheadController.js" />
+    <Content Include="controller\userdashboardController.js" />
+    <Content Include="controller\VehicleController.js" />
+    <Content Include="controller\WarehouseCategoryController.js" />
+    <Content Include="controller\warehouseController.js" />
+    <Content Include="controller\WarehousesubcategoryController.js" />
+    <Content Include="controller\WarehousesubsubCategoryController.js" />
+    <Content Include="controller\WarehouseSupplierController.js" />
+    <Content Include="controller\weektasktimesheetController.js" />
+    <Content Include="controller\weektimesheetController.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="i18n\resources-locale_de.js" />
+    <Content Include="i18n\resources-locale_en.js" />
+    <Content Include="i18n\resources-locale_es.js" />
+    <Content Include="i18n\resources-locale_fr.js" />
+    <Content Include="i18n\resources-locale_it.js" />
+    <Content Include="i18n\resources-locale_ja.js" />
+    <Content Include="i18n\resources-locale_ko.js" />
+    <Content Include="i18n\resources-locale_pt.js" />
+    <Content Include="i18n\resources-locale_ru.js" />
+    <Content Include="i18n\resources-locale_zh.js" />
+    <Content Include="index.html" />
+    <Content Include="NLog.config" />
+    <Content Include="ReportsControllers\Comparison1Ctrl.js" />
+    <Content Include="ReportsControllers\ComparisonCtrl.js" />
+    <Content Include="ReportsControllers\DeliveryBoyReportCtrl.js" />
+    <Content Include="ReportsControllers\ProductReportController.js" />
+    <Content Include="ReportsControllers\RetailersReportCtrl.js" />
+    <Content Include="ReportsControllers\Report3Controller.js" />
+    <Content Include="scripts\chartjs\angular-chart.js" />
+    <Content Include="scripts\chartjs\angular-chart.min.js" />
+    <Content Include="scripts\vendor\alasql.min.js" />
+    <Content Include="services\AreaService.js" />
+    <Content Include="services\CustomerIssuesService.js" />
+    <Content Include="services\OfferService.js" />
+    <Content Include="services\DamageOrderMasterService.js" />
+    <Content Include="services\DamageOrderDetailsService.js" />
+    <Content Include="services\SalesService.js" />
+    <Content Include="services\Service.js" />
+    <Content Include="services\unitMasterService.js" />
+    <Content Include="UnitEconomics\unitEcoReportCtlr.js" />
+    <Content Include="views\Customer\CustomerIssue.html" />
+    <Content Include="views\DamageStock\CreateDamageOrder.html" />
+    <Content Include="views\DamageStock\CreateDamageOrderController.js" />
+    <Content Include="views\DamageStock\DamageStock.html" />
+    <Content Include="views\DamageStock\DamageStockController.js" />
+    <Content Include="views\DamageStock\DamageorderMaster.html" />
+    <Content Include="views\DamageStock\DamageOrderdetails.html" />
+    <Content Include="views\Delivery\VehicleAssissment.html" />
+    <Content Include="views\Feed_Report\ReqService.html" />
+    <Content Include="views\ItemCategory\NppHistoryPrice.html" />
+    <Content Include="views\ItemCategory\supplierPromo.html" />
+    <Content Include="views\ItemCategory\promoItems.html" />
+    <Content Include="views\notification\GroupNotification.html" />
+    <Content Include="views\notification\Notification.html" />
+    <Content Include="views\notification\NotificationByDeviceId.html" />
+    <Content Include="views\IR\IR.html" />
+    <Content Include="views\IR\IRSupplier.html" />
+    <Content Include="views\Order\Excelorder.html" />
+    <Content Include="views\Order\Notordered.html" />
+    <Content Include="views\Order\orderMaster.html" />
+    <Content Include="views\Order\reedeemOrder.html" />
+    <Content Include="views\Reports\OrederProcessReport.html" />
+    <Content Include="views\Reports\ProductReport.html" />
+    <Content Include="views\Reports\SearchPurchaseOrder.html" />
+    <Content Include="views\UnitEconomic\ueReport.html" />
+    <Content Include="views\UnitEconomic\unitEconomics.html" />
+    <Content Include="UnitEconomics\unitEcoController.js" />
+    <Content Include="views\Customer\AsignDays.html" />
+    <Content Include="views\Feed_Report\suggetion.html" />
+    <Content Include="views\Feed_Report\SalesTarget.html" />
+    <Content Include="views\Offer\Offer.html" />
+    <Content Include="views\Order\orderPending.html" />
+    <Content Include="views\Order\ShortageSettle.html" />
+    <Content Include="views\pages\logout.html" />
+    <Content Include="views\Reports\Comparison1.html" />
+    <Content Include="views\Reports\DeliveryBoyReport.html" />
+    <Content Include="views\Reports\ReturnItem.html" />
+    <Content Include="views\Reports\Report.html" />
+    <Content Include="views\Reports\Comparison.html" />
+    <Content Include="views\Reports\RetailersReport.html" />
+    <Content Include="views\Reports\Report3.html" />
+    <Content Include="ReportsControllers\ReportController.js" />
+    <Content Include="scripts\alasql.min.js" />
+    <Content Include="scripts\angucomplete-alt.js" />
+    <Content Include="scripts\angular-file-upload-all.js" />
+    <Content Include="scripts\angular-file-upload-all.min.js" />
+    <Content Include="scripts\angular-file-upload-shim.js" />
+    <Content Include="scripts\angular-file-upload-shim.min.js" />
+    <Content Include="scripts\angular-file-upload.js" />
+    <Content Include="scripts\angular-file-upload.min.js" />
+    <Content Include="scripts\angular-validation-match.min.js" />
+    <Content Include="scripts\angularjs-dropdown-multiselect.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\app123.js" />
+    <Content Include="scripts\appmain.js" />
+    <Content Include="scripts\bootstrap-select.js" />
+    <Content Include="scripts\canvasjs.js" />
+    <Content Include="scripts\daterangepicker.js" />
+    <Content Include="scripts\dirPagination.js" />
+    <Content Include="scripts\example.js" />
+    <Content Include="scripts\jquery-2.1.4.js" />
+    <Content Include="scripts\loading-bar.min.js" />
+    <Content Include="scripts\lodash.js" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\moment.min.js" />
+    <Content Include="scripts\ng-table.js" />
+    <Content Include="scripts\ngAutocomplete.js" />
+    <Content Include="scripts\simple-autocomplete.js" />
+    <Content Include="scripts\timepickerpop.js" />
+    <Content Include="scripts\ui.js" />
+    <Content Include="scripts\vendor.js" />
+    <Content Include="scripts\vendor123.js" />
+    <Content Include="scripts\vendor\angular-daterangepicker.min.js" />
+    <Content Include="scripts\vendor\angular-local-storage.min.js" />
+    <Content Include="scripts\vendor\animate.js" />
+    <Content Include="scripts\vendor\bootstrap-select.js" />
+    <Content Include="scripts\vendor\circles.js" />
+    <Content Include="scripts\vendor\circles.min.js" />
+    <Content Include="scripts\vendor\daterangepicker.js" />
+    <Content Include="scripts\vendor\moment.js" />
+    <Content Include="scripts\vendor\moment.min.js" />
+    <Content Include="scripts\vendor\ng-bs-daterangepicker.min.js" />
+    <Content Include="scripts\vendor\ng-table-export.js" />
+    <Content Include="scripts\vendor\ng-table.min.js" />
+    <Content Include="scripts\vendor\spec\circlesSpec.js" />
+    <Content Include="scripts\vendor\spec\index.html" />
+    <Content Include="scripts\vendor\spec\karma.conf.js" />
+    <Content Include="scripts\vendor\spec\responsive.html" />
+    <Content Include="scripts\vendor\spec\viewport.html" />
+    <Content Include="scripts\xlsx.core.min.js" />
+    <Content Include="services\AssetsCategoryService.js" />
+    <Content Include="services\AssetsService .js" />
+    <Content Include="services\authInterceptorService.js" />
+    <Content Include="services\authService.js" />
+    <Content Include="services\DeliveryChargeService.js" />
+    <Content Include="services\CategoryService.js" />
+    <Content Include="services\ClusterService.js" />
+    <Content Include="services\CouponService.js" />
+    <Content Include="services\DeliveryService.js" />
+    <Content Include="services\NewsService.js" />
+    <Content Include="services\CurrentStockService.js" />
+    <Content Include="services\CityService.js" />
+    <Content Include="services\ClientProjectService.js" />
+    <Content Include="services\CopyItemService.js" />
+    <Content Include="services\CustomerCategoryService.js" />
+    <Content Include="services\customerService.js" />
+    <Content Include="services\DemandService.js" />
+    <Content Include="services\DeviceNotificationService.js" />
+    <Content Include="services\EditPriceService.js" />
+    <Content Include="services\FinancialYearService.js" />
+    <Content Include="services\getsetdata.js" />
+    <Content Include="services\GroupNotificationService.js" />
+    <Content Include="services\InvoiceProductService.js" />
+    <Content Include="services\invoiceService.js" />
+    <Content Include="services\ItemBrandService.js" />
+    <Content Include="services\itemCategoryService.js" />
+    <Content Include="services\itemMasterService.js" />
+    <Content Include="services\BillPramotionService.js" />
+    <Content Include="services\ItemPramotionService.js" />
+    <Content Include="services\leavesService.js" />
+    <Content Include="services\mappService.js" />
+    <Content Include="services\MessageService.js" />
+    <Content Include="services\NotificationByDeviceIdService.js" />
+    <Content Include="services\NotificationService.js" />
+    <Content Include="services\OrderDetailsService.js" />
+    <Content Include="services\OrderMasterService.js" />
+    <Content Include="services\ordersService.js" />
+    <Content Include="services\peoplesService.js" />
+    <Content Include="services\profilesService.js" />
+    <Content Include="services\projectsService.js" />
+    <Content Include="services\projectsTasksService.js" />
+    <Content Include="services\PurchaseODetailsService.js" />
+    <Content Include="services\PurchaseOrderListService.js" />
+    <Content Include="services\PurchaseOrderService.js" />
+    <Content Include="services\RoleService.js" />
+    <Content Include="services\SearchPOService.js" />
+    <Content Include="services\settingService.js" />
+    <Content Include="services\SliderService.js" />
+    <Content Include="services\StateService.js" />
+    <Content Include="services\SubCategoryService.js" />
+    <Content Include="services\SubsubCategoryService.js" />
+    <Content Include="services\supplierCategoryService.js" />
+    <Content Include="services\supplierService.js" />
+    <Content Include="services\tasksService.js" />
+    <Content Include="services\tasktypesService.js" />
+    <Content Include="services\TaxGroupDetailsService.js" />
+    <Content Include="services\TaxGroupService.js" />
+    <Content Include="services\TaxMasterService.js" />
+    <Content Include="services\tokensManagerService.js" />
+    <Content Include="services\travelRequestService.js" />
+    <Content Include="services\WarehouseCategoryService.js" />
+    <Content Include="services\WarehouseService.js" />
+    <Content Include="services\WarehouseSubCategoryService.js" />
+    <Content Include="services\WarehouseSubsubCategoryService.js" />
+    <Content Include="services\WarehouseSupplierService.js" />
+    <Content Include="styles\bootstrap-select.min.css" />
+    <Content Include="styles\bootstrap\bootstrap\bootstrap.css" />
+    <Content Include="styles\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="styles\daterangepicker-bs2.css" />
+    <Content Include="styles\daterangepicker-bs3.css" />
+    <Content Include="styles\img\checkmark.png" />
+    <Content Include="styles\loading-bar.min.css" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\styles_timesheets-1c161cfbef2ca54c47143503d901cf4b.css" />
+    <Content Include="styles\ui.css" />
+    <Content Include="styles\ui\images\flags-s360b763ee1.png" />
+    <Content Include="styles\ui\images\flags\american.png" />
+    <Content Include="styles\ui\images\flags\china.png" />
+    <Content Include="styles\ui\images\flags\france.png" />
+    <Content Include="styles\ui\images\flags\german.png" />
+    <Content Include="styles\ui\images\flags\italy.png" />
+    <Content Include="styles\ui\images\flags\japan.png" />
+    <Content Include="styles\ui\images\flags\korea.png" />
+    <Content Include="styles\ui\images\flags\portugal.png" />
+    <Content Include="styles\ui\images\flags\russia.png" />
+    <Content Include="styles\ui\images\flags\spain.png" />
+    <Content Include="styles\simple-autocomplete.css" />
+    <Content Include="views\admin\assets.html" />
+    <Content Include="views\admin\assetsCategory.html" />
+    <Content Include="views\admin\DeliveryCharges.html" />
+    <Content Include="views\admin\categorys.html" />
+    <Content Include="views\admin\Coupon.html" />
+    <Content Include="views\admin\creatingRecurringinvoice.html" />
+    <Content Include="views\admin\expenseApprove.html" />
+    <Content Include="views\admin\expenseReport.html" />
+    <Content Include="views\admin\expenses.html" />
+    <Content Include="views\admin\Integration\Git.html" />
+    <Content Include="views\admin\Integration\Tfs.html" />
+    <Content Include="views\admin\invoice.html" />
+    <Content Include="views\admin\leaveApprove.html" />
+    <Content Include="views\admin\leaveReport.html" />
+    <Content Include="views\admin\Message.html" />
+    <Content Include="views\admin\News.html" />
+    <Content Include="views\admin\people.html" />
+    <Content Include="views\admin\projects.html" />
+    <Content Include="views\admin\projectsTasks.html" />
+    <Content Include="views\admin\Roles.html" />
+    <Content Include="views\admin\setting.html" />
+    <Content Include="views\admin\settingEdit.html" />
+    <Content Include="views\admin\tasktypes.html" />
+    <Content Include="views\admin\travelRequestApprove.html" />
+    <Content Include="views\Category\BaseCategory.html" />
+    <Content Include="views\Category\Category.html" />
+    <Content Include="views\Category\subCategory.html" />
+    <Content Include="views\Category\SubsubCategory.html" />
+    <Content Include="views\Customer\CustomerCategory.html" />
+    <Content Include="views\Customer\Authcustomers.html" />
+    <Content Include="views\Customer\customers.html" />
+    <Content Include="views\dashboard.html" />
+    <Content Include="views\Delivery\ChangeDBoy.html" />
+    <Content Include="views\Delivery\Delivery.html" />
+    <Content Include="views\Delivery\DeliveryBoy.html" />
+    <Content Include="views\Delivery\DeliveryBoyHistory.html" />
+    <Content Include="views\Delivery\Vehicle.html" />
+    <Content Include="views\forms\elements.html" />
+    <Content Include="views\forms\layouts.html" />
+    <Content Include="views\forms\validation.html" />
+    <Content Include="views\forms\wizard.html" />
+    <Content Include="views\header.html" />
+    <Content Include="views\invoice\invoice.html" />
+    <Content Include="views\invoice\PurchaseInvoice.html" />
+    <Content Include="views\ItemCategory\editPrice.html" />
+    <Content Include="views\ItemCategory\FilterItem.html" />
+    <Content Include="views\ItemCategory\ItemCategory.html" />
+    <Content Include="views\ItemCategory\itemMaster.html" />
+    <Content Include="views\MoveItems\MoveCategory.html" />
+    <Content Include="views\MoveItems\MoveItems.html" />
+    <Content Include="views\MoveItems\MoveSub2Category.html" />
+    <Content Include="views\MoveItems\MoveSubCategory.html" />
+    <Content Include="views\nav.html" />
+    <Content Include="views\NewFolder1\multipleimages.html" />
+    <Content Include="views\new\City.html" />
+    <Content Include="views\new\financialyear.html" />
+    <Content Include="views\new\Itembrandname.html" />
+    <Content Include="views\new\mapp.html" />
+    <Content Include="views\new\State.html" />
+    <Content Include="views\new\UnitMasterCategory.html" />
+    <Content Include="views\Order\Orderdetails.html" />
+    <Content Include="views\Order\OrderSettle.html" />
+    <Content Include="views\Order\ReturnOrderdetails.html" />
+    <Content Include="views\pages\404.html" />
+    <Content Include="views\pages\500.html" />
+    <Content Include="views\pages\blank.html" />
+    <Content Include="views\pages\ConfirmEmail.html" />
+    <Content Include="views\pages\features.html" />
+    <Content Include="views\pages\feedback.html" />
+    <Content Include="views\pages\invoice.html" />
+    <Content Include="views\pages\lock-screen.html" />
+    <Content Include="views\pages\profile.html" />
+    <Content Include="views\pages\profileEdit.html" />
+    <Content Include="views\pages\signin.html" />
+    <Content Include="views\pages\signup.html" />
+    <Content Include="views\Pramotion\BrandPramotion.html" />
+    <Content Include="views\Pramotion\BillPramotion.html" />
+    <Content Include="views\Pramotion\ItemPramotion.html" />
+    <Content Include="views\Redispatch\RedispatchOrders.html" />
+    <Content Include="views\Reports\DashboardReport.html" />
+    <Content Include="views\Reports\GoodsRecived.html" />
+    <Content Include="views\Reports\OrderPaymentReport.html" />
+    <Content Include="views\Reports\PurchaseOrderdetails.html" />
+    <Content Include="views\Reports\PurchaseOrderList.html" />
+    <Content Include="views\Reports\DemandReport.html" />
+    <Content Include="views\Reports\PurchaseOrder.html" />
+    <Content Include="views\report\clientdashboard.html" />
+    <Content Include="views\report\projectdashboard.html" />
+    <Content Include="views\report\taskdashboard.html" />
+    <Content Include="views\report\time.html" />
+    <Content Include="views\report\userdashboard.html" />
+    <Content Include="views\SalesSettlement\BounceCheq.html" />
+    <Content Include="views\SalesSettlement\SaleCheqBounce.html" />
+    <Content Include="views\SalesSettlement\SalesSettlement.html" />
+    <Content Include="views\SalesSettlement\SalesSettlementHistory.html" />
+    <Content Include="views\Slider\Slider.html" />
+    <Content Include="views\Stock\CurrentStock.html" />
+    <Content Include="views\suppliers\supplier.html" />
+    <Content Include="views\suppliers\supplierCategory.html" />
+    <Content Include="views\tables\dynamic.html" />
+    <Content Include="views\tables\responsive.html" />
+    <Content Include="views\tables\static.html" />
+    <Content Include="views\TaxGroup\TaxGroup.html" />
+    <Content Include="views\TaxGroup\TaxMaster.html" />
+    <Content Include="views\Timesheet\daytasktimesheet.html" />
+    <Content Include="views\Timesheet\daytimesheet.html" />
+    <Content Include="views\Timesheet\leavepage.html" />
+    <Content Include="views\Timesheet\monthtimesheet.html" />
+    <Content Include="views\Timesheet\TFSweektimesheet.html" />
+    <Content Include="views\Timesheet\travelRequestPage.html" />
+    <Content Include="views\Timesheet\weektasktimesheet.html" />
+    <Content Include="views\Timesheet\weektimesheet.html" />
+    <Content Include="views\ui\buttons.html" />
+    <Content Include="views\ui\calendar.html" />
+    <Content Include="views\ui\components.html" />
+    <Content Include="views\ui\grids.html" />
+    <Content Include="views\ui\icons.html" />
+    <Content Include="views\ui\pricing-tables.html" />
+    <Content Include="views\ui\timeline.html" />
+    <Content Include="views\ui\typography.html" />
+    <Content Include="views\ui\widgets.html" />
+    <Content Include="views\Wallet\Milestone.html" />
+    <Content Include="views\Wallet\rewardItem.html" />
+    <Content Include="views\Wallet\Reward.html" />
+    <Content Include="views\Wallet\Wallet.html" />
+    <Content Include="views\WareHouse\AddDemand.html" />
+    <Content Include="views\WareHouse\Area.html" />
+    <Content Include="views\WareHouse\Cluster.html" />
+    <Content Include="views\WareHouse\Warehouse.html" />
+    <Content Include="views\WareHouse\WarehouseCategory.html" />
+    <Content Include="views\WareHouse\WareHouseMapping.html" />
+    <Content Include="views\WareHouse\WarehousesubCategory.html" />
+    <Content Include="views\WareHouse\WarehouseSubsubCategory.html" />
+    <Content Include="views\WareHouse\WarehouseSupplier.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\OdataConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AuthContext.cs" />
+    <Compile Include="AuthRepository.cs" />
+    <Compile Include="ControllersReports\Comparison1Controller.cs" />
+    <Compile Include="ControllersReports\ComparisonController.cs" />
+    <Compile Include="ControllersReports\DashboardReportController.cs" />
+    <Compile Include="ControllersReports\DeliveryBoyReportController.cs" />
+    <Compile Include="ControllersReports\ProductReportController.cs" />
+    <Compile Include="ControllersReports\ReportController.cs" />
+    <Compile Include="ControllersReports\RetailersReportController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AllInvoiveController.cs" />
+    <Compile Include="Controllers\AreaController.cs" />
+    <Compile Include="Controllers\AreaUploadController.cs" />
+    <Compile Include="Controllers\BankSettleController.cs" />
+    <Compile Include="Controllers\BaseCategoryController .cs" />
+    <Compile Include="Controllers\BounceCheqController.cs" />
+    <Compile Include="Controllers\BrandPramotionController.cs" />
+    <Compile Include="Controllers\BrandPramotionsController.cs" />
+    <Compile Include="Controllers\CurrencyStockController.cs" />
+    <Compile Include="Controllers\CurrentStockHistory.cs" />
+    <Compile Include="Controllers\CustomerIssueController.cs" />
+    <Compile Include="Controllers\IRController.cs" />
+    <Compile Include="Controllers\FreeItemController.cs" />
+    <Compile Include="Controllers\IRUploadController.cs" />
+    <Compile Include="Controllers\DamageOrderDetailsController.cs" />
+    <Compile Include="Controllers\DamageOrderMasterController.cs" />
+    <Compile Include="Controllers\ReqServiceController.cs" />
+    <Compile Include="Controllers\NppHistoryPriceController.cs" />
+    <Compile Include="Controllers\RIUploadController.cs" />
+    <Compile Include="Controllers\RewardItemController.cs" />
+    <Compile Include="Controllers\OfferController.cs" />
+    <Compile Include="Controllers\pointConversion.cs" />
+    <Compile Include="Controllers\ReturnItemController.cs" />
+    <Compile Include="Controllers\DeliverychargeController.cs" />
+    <Compile Include="Controllers\CategoryController .cs" />
+    <Compile Include="Controllers\CategoryJsonController.cs" />
+    <Compile Include="Controllers\ClusterController.cs" />
+    <Compile Include="Controllers\CouponController .cs" />
+    <Compile Include="Controllers\CurrentStockController.cs" />
+    <Compile Include="Controllers\CityController.cs" />
+    <Compile Include="Controllers\currentstockuploadController.cs" />
+    <Compile Include="Controllers\CustomerCategoryController.cs" />
+    <Compile Include="Controllers\CustomerRegistrationController.cs" />
+    <Compile Include="Controllers\BillPramotionController.cs" />
+    <Compile Include="Controllers\ItemMasterUploadController.cs" />
+    <Compile Include="Controllers\CatLogoUploadController.cs" />
+    <Compile Include="Controllers\BasecatUploadController.cs" />
+    <Compile Include="Controllers\NewsController .cs" />
+    <Compile Include="Controllers\OrderPendingController.cs" />
+    <Compile Include="Controllers\RewardPointCtrl.cs" />
+    <Compile Include="Controllers\ShortageSettleController.cs" />
+    <Compile Include="Controllers\tagetController.cs" />
+    <Compile Include="Controllers\SalesSettlementController.cs" />
+    <Compile Include="Controllers\PeopleUploadController.cs" />
+    <Compile Include="Controllers\DeviceNotificationController.cs" />
+    <Compile Include="Controllers\GroupNotificationController.cs" />
+    <Compile Include="Controllers\LogoUploadController - Notification.cs" />
+    <Compile Include="Controllers\MessageController .cs" />
+    <Compile Include="Controllers\CustomerUploadController.cs" />
+    <Compile Include="Controllers\DemandController.cs" />
+    <Compile Include="Controllers\EditPriceController.cs" />
+    <Compile Include="Controllers\FavoritesController.cs" />
+    <Compile Include="Controllers\FeedbackController.cs" />
+    <Compile Include="Controllers\FinancialYearController.cs" />
+    <Compile Include="Controllers\ItemBrandController.cs" />
+    <Compile Include="Controllers\ItemCopyController.cs" />
+    <Compile Include="Controllers\ItemJsonController.cs" />
+    <Compile Include="Controllers\ItemMasterController.cs" />
+    <Compile Include="Controllers\ItemMastersController.cs" />
+    <Compile Include="Controllers\ItemPramotionController.cs" />
+    <Compile Include="Controllers\LogoUploadController.cs" />
+    <Compile Include="Controllers\MultipleimgController.cs" />
+    <Compile Include="Controllers\NewPurchaseDeliveryOrderController.cs" />
+    <Compile Include="Controllers\NewPurchaseInvoiceController.cs" />
+    <Compile Include="Controllers\NewPurchaseOrderController.cs" />
+    <Compile Include="Controllers\NewSaleInvoiceController.cs" />
+    <Compile Include="Controllers\NewSalesOrderController.cs" />
+    <Compile Include="Controllers\NotificationByDeviceIdController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\OrderDetailsController.cs" />
+    <Compile Include="Controllers\OrderDispatchedDetailsFinalController.cs" />
+    <Compile Include="Controllers\OrderDispatchedDetailsReturnController.cs" />
+    <Compile Include="Controllers\OrderDispatchedMasterFinalController.cs" />
+    <Compile Include="Controllers\OrderMasterController.cs" />
+    <Compile Include="Controllers\OrderMastersAPIController.cs" />
+    <Compile Include="Controllers\OrderDispatchedDetailsController.cs" />
+    <Compile Include="Controllers\PurchaseOrderDetailRecivedController.cs" />
+    <Compile Include="Controllers\PurchaseOrderDetailController.cs" />
+    <Compile Include="Controllers\PurchaseOrderListController.cs" />
+    <Compile Include="Controllers\PurchaseorderController.cs" />
+    <Compile Include="Controllers\OrderDispatchedMasterController.cs" />
+    <Compile Include="Controllers\PurchaseOrderMasterRecivedController.cs" />
+    <Compile Include="Controllers\PurchaseOrderMasterController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\RetailerController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SliderController.cs" />
+    <Compile Include="Controllers\SliderUploadController.cs" />
+    <Compile Include="Controllers\StateController.cs" />
+    <Compile Include="Controllers\SubCategoryController.cs" />
+    <Compile Include="Controllers\SubsubCategoriesJsonApiController.cs" />
+    <Compile Include="Controllers\SubsubCategoryController.cs" />
+    <Compile Include="Controllers\ClientProjectsController.cs" />
+    <Compile Include="Controllers\ConfirmEmailController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\Helper.cs" />
+    <Compile Include="Controllers\ImageUploadController.cs" />
+    <Compile Include="Controllers\InvoiceRowController.cs" />
+    <Compile Include="Controllers\PeoplesController.cs" />
+    <Compile Include="Controllers\PieChartController.cs" />
+    <Compile Include="Controllers\ProfilesController.cs" />
+    <Compile Include="Controllers\SupplierCategoryController.cs" />
+    <Compile Include="Controllers\SupplierController.cs" />
+    <Compile Include="Controllers\SubSubCategoryUploadController.cs" />
+    <Compile Include="Controllers\SupplierUploadController.cs" />
+    <Compile Include="Controllers\TaxController.cs" />
+    <Compile Include="Controllers\TaxGroupController.cs" />
+    <Compile Include="Controllers\TaxGroupDetailsController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\itemUploadController.cs" />
+    <Compile Include="Controllers\ItemImageUploadController.cs" />
+    <Compile Include="Controllers\UploadController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\RefreshTokensController.cs" />
+    <Compile Include="Controllers\VehicleAssissmentController.cs" />
+    <Compile Include="Controllers\WalletController.cs" />
+    <Compile Include="Controllers\WarehouseCatApiController.cs" />
+    <Compile Include="Controllers\WarehouseCategoryController.cs" />
+    <Compile Include="Controllers\WarehouseCategoryUploadController.cs" />
+    <Compile Include="Controllers\WarehouseController.cs" />
+    <Compile Include="Controllers\WarehouseSupplierController.cs" />
+    <Compile Include="Controllers\WarehouseSupplierUploadController.cs" />
+    <Compile Include="ControllerV1\CurrencySettleController.cs" />
+    <Compile Include="ControllerV1\ExcelOrderController.cs" />
+    <Compile Include="ControllerV1\NotOrderedController.cs" />
+    <Compile Include="ControllerV1\AsignDayController.cs" />
+    <Compile Include="ControllerV1\DailyEssentialController.cs" />
+    <Compile Include="ControllerV1\DeliveryBoyAppController.cs" />
+    <Compile Include="ControllerV1\DeliveryBoyController.cs" />
+    <Compile Include="ControllerV1\DeliveryIssuanceController.cs" />
+    <Compile Include="ControllerV1\DeliveryOrderController.cs" />
+    <Compile Include="ControllerV1\OrederProcessReportController.cs" />
+    <Compile Include="ControllerV1\SearchOrderController.cs" />
+    <Compile Include="ControllerV1\RedispatchController.cs" />
+    <Compile Include="ControllerV1\DeliveryTaskController.cs" />
+    <Compile Include="ControllerV1\GpsController.cs" />
+    <Compile Include="ControllerV1\SalePersonRetailerController.cs" />
+    <Compile Include="ControllerV1\SubCatItemController.cs" />
+    <Compile Include="ControllerV1\SubsubCategoryOdata.cs" />
+    <Compile Include="ControllerV1\CategoryOdata.cs" />
+    <Compile Include="ControllerV1\VehicleController.cs" />
+    <Compile Include="CRM\ActionTaskController.cs" />
+    <Compile Include="CRM\CRMController.cs" />
+    <Compile Include="CRM\NetProfitController.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="iAuthContext.cs" />
+    <Compile Include="Migrations\201709040934415_ewrfsd.cs" />
+    <Compile Include="Migrations\201709040934415_ewrfsd.Designer.cs">
+      <DependentUpon>201709040934415_ewrfsd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MobileAppVersion\AppVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\FacebookAuthProvider.cs" />
+    <Compile Include="Providers\GoogleAuthProvider.cs" />
+    <Compile Include="Providers\SimpleAuthorizationServerProvider.cs" />
+    <Compile Include="Providers\SimpleRefreshTokenProvider.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Sms.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="UnitEconomics\UEReportController.cs" />
+    <Compile Include="UnitEconomics\unitEconomicUploader.cs" />
+    <Compile Include="UnitEconomics\unitEcoController.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="views\DamageStock\CreateDamageOrderController.cs" />
+    <Compile Include="views\DamageStock\DamageStockController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\alerts.less" />
+    <Content Include="Content\bootstrap\badges.less" />
+    <Content Include="Content\bootstrap\bootstrap.less" />
+    <Content Include="Content\bootstrap\breadcrumbs.less" />
+    <Content Include="Content\bootstrap\button-groups.less" />
+    <Content Include="Content\bootstrap\buttons.less" />
+    <Content Include="Content\bootstrap\carousel.less" />
+    <Content Include="Content\bootstrap\close.less" />
+    <Content Include="Content\bootstrap\code.less" />
+    <Content Include="Content\bootstrap\component-animations.less" />
+    <Content Include="Content\bootstrap\dropdowns.less" />
+    <Content Include="Content\bootstrap\forms.less" />
+    <Content Include="Content\bootstrap\glyphicons.less" />
+    <Content Include="Content\bootstrap\grid.less" />
+    <Content Include="Content\bootstrap\input-groups.less" />
+    <Content Include="Content\bootstrap\jumbotron.less" />
+    <Content Include="Content\bootstrap\labels.less" />
+    <Content Include="Content\bootstrap\list-group.less" />
+    <Content Include="Content\bootstrap\media.less" />
+    <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="Content\bootstrap\modals.less" />
+    <Content Include="Content\bootstrap\navbar.less" />
+    <Content Include="Content\bootstrap\navs.less" />
+    <Content Include="Content\bootstrap\normalize.less" />
+    <Content Include="Content\bootstrap\pager.less" />
+    <Content Include="Content\bootstrap\pagination.less" />
+    <Content Include="Content\bootstrap\panels.less" />
+    <Content Include="Content\bootstrap\popovers.less" />
+    <Content Include="Content\bootstrap\print.less" />
+    <Content Include="Content\bootstrap\progress-bars.less" />
+    <Content Include="Content\bootstrap\responsive-utilities.less" />
+    <Content Include="Content\bootstrap\scaffolding.less" />
+    <Content Include="Content\bootstrap\tables.less" />
+    <Content Include="Content\bootstrap\theme.less" />
+    <Content Include="Content\bootstrap\thumbnails.less" />
+    <Content Include="Content\bootstrap\tooltip.less" />
+    <Content Include="Content\bootstrap\type.less" />
+    <Content Include="Content\bootstrap\utilities.less" />
+    <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\bootstrap\wells.less" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bower_components\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="bower_components\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="bower_components\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="bower_components\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="bower_components\weather-icons\css\README.md" />
+    <Content Include="bower_components\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="bower_components\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="bower_components\weather-icons\font\weathericons-regular-webfont.woff" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="scripts\angular-file-upload.min.map" />
+    <Content Include="styles\bootstrap\bootstrap\bootstrap.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_alerts.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_buttons.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_center-block.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_forms.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_gradients.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_grid.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_image.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_labels.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_list-group.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_opacity.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_pagination.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_panels.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_resize.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_size.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_table-row.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="styles\bootstrap\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_alerts.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_badges.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_breadcrumbs.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_button-groups.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_buttons.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_carousel.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_close.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_code.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_component-animations.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_dropdowns.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_forms.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_glyphicons.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_grid.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_input-groups.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_jumbotron.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_labels.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_list-group.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_media.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_mixins.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_modals.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_navbar.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_navs.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_normalize.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_pager.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_pagination.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_panels.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_popovers.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_print.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_progress-bars.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_responsive-embed.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_responsive-utilities.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_scaffolding.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_tables.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_theme.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_thumbnails.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_tooltip.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_type.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_utilities.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_variables.scss" />
+    <Content Include="styles\bootstrap\bootstrap\_wells.scss" />
+    <Content Include="styles\bootstrap\_bootstrap-compass.scss" />
+    <Content Include="styles\bootstrap\_bootstrap-mincer.scss" />
+    <Content Include="styles\bootstrap\_bootstrap-sprockets.scss" />
+    <Content Include="styles\bootstrap\_bootstrap.scss" />
+    <Content Include="styles\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="styles\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="styles\bootstrap\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\Fertilize.pubxml" />
+    <None Include="Properties\PublishProfiles\Foognoo.pubxml" />
+    <None Include="Properties\PublishProfiles\shopkirana.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="scripts\chartjs\angular-chart.min.js.map" />
+    <None Include="Properties\PublishProfiles\shopkirana1.pubxml" />
+    <None Include="Properties\PublishProfiles\Fertilizer.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="images\basecatimages\" />
+    <Folder Include="images\catimages\" />
+    <Folder Include="images\itemimages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AngularJSAuthentication.Model\AngularJSAuthentication.Model.csproj">
+      <Project>{33141331-A9F8-4419-9FD2-9D52EC18043B}</Project>
+      <Name>AngularJSAuthentication.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709040934415_ewrfsd.resx">
+      <DependentUpon>201709040934415_ewrfsd.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26264</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:26265/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

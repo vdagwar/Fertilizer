@@ -1,0 +1,1113 @@
+2017-09-05 10:35:13.8375 INFO start Warehouse: 
+2017-09-05 10:35:13.8596 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:35:14.0057 INFO End  Warehouse: 
+2017-09-05 10:35:14.8002 INFO Get Company: 
+2017-09-05 10:35:14.8072 INFO End Get Company: 
+2017-09-05 10:35:14.8923 INFO start Warehouse: 
+2017-09-05 10:35:14.8923 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:35:14.9063 INFO End  Warehouse: 
+2017-09-05 10:35:15.0494 INFO start get all Sales Executive: 
+2017-09-05 10:35:15.0584 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:36:25.7798 INFO start OrderMaster: 
+2017-09-05 10:36:25.7798 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:36:25.7998 INFO End OrderMaster: 
+2017-09-05 10:37:43.8283 INFO start Warehouse: 
+2017-09-05 10:37:43.8283 INFO start ItemMaster: 
+2017-09-05 10:37:43.8413 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:37:43.8413 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:37:43.8664 INFO End  Warehouse: 
+2017-09-05 10:37:43.9664 INFO End ItemMaster: 
+2017-09-05 10:40:36.5391 INFO start SubCategory: 
+2017-09-05 10:40:36.5421 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.5421 INFO start City: 
+2017-09-05 10:40:36.5651 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.5391 INFO start Subsubategory: 
+2017-09-05 10:40:36.5421 INFO start Category: 
+2017-09-05 10:40:36.6121 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.5891 INFO start Category: 
+2017-09-05 10:40:38.4795 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.5831 INFO start TaxGroup: 
+2017-09-05 10:40:38.5115 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.5891 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:36.6452 INFO End  City: 
+2017-09-05 10:40:36.6452 INFO End  SubCategory: 
+2017-09-05 10:40:38.5005 INFO End  WarehouseCategory: 
+2017-09-05 10:40:38.5686 INFO End  Subsubategory: 
+2017-09-05 10:40:38.5416 INFO End  Category: 
+2017-09-05 10:40:38.6156 INFO start Supplier: 
+2017-09-05 10:40:38.5976 INFO End  TaxGroup: 
+2017-09-05 10:40:38.6456 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:40:38.7377 INFO End  Supplier: 
+2017-09-05 10:41:29.7007 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:41:31.8701 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 10:41:35.9370 INFO Get Company: 
+2017-09-05 10:41:35.9370 INFO End Get Company: 
+2017-09-05 10:41:36.0471 INFO start Warehouse: 
+2017-09-05 10:41:36.0471 INFO start ItemMaster: 
+2017-09-05 10:41:36.0471 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:41:36.0581 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:41:36.0761 INFO End  Warehouse: 
+2017-09-05 10:41:36.0761 INFO End ItemMaster: 
+2017-09-05 10:42:32.8154 INFO start Slider: 
+2017-09-05 10:42:32.8384 INFO End  Slider: 
+2017-09-05 10:43:38.6270 INFO start logo upload
+2017-09-05 10:43:38.6400 INFO User ID : 0 , Company Id : 0
+2017-09-05 10:43:41.1692 INFO Add Slider: 
+2017-09-05 10:43:41.1832 INFO End  Add Slider: 
+2017-09-05 10:43:55.1618 INFO Get Company: 
+2017-09-05 10:43:55.1689 INFO End Get Company: 
+2017-09-05 10:43:55.2309 INFO start Slider: 
+2017-09-05 10:43:55.2309 INFO End  Slider: 
+2017-09-05 10:46:23.8717 INFO start Warehouse: 
+2017-09-05 10:46:23.8717 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:23.8717 INFO start ItemMaster: 
+2017-09-05 10:46:23.8927 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:23.8927 INFO End  Warehouse: 
+2017-09-05 10:46:23.9167 INFO End ItemMaster: 
+2017-09-05 10:46:31.0345 INFO start City: 
+2017-09-05 10:46:31.0345 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.0425 INFO start TaxGroup: 
+2017-09-05 10:46:31.0425 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.0425 INFO End  City: 
+2017-09-05 10:46:31.0425 INFO start SubCategory: 
+2017-09-05 10:46:31.0786 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.0565 INFO End  TaxGroup: 
+2017-09-05 10:46:31.0565 INFO start Subsubategory: 
+2017-09-05 10:46:31.0425 INFO start Category: 
+2017-09-05 10:46:31.1136 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.0786 INFO start Category: 
+2017-09-05 10:46:31.1306 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.1006 INFO End  SubCategory: 
+2017-09-05 10:46:31.1306 INFO End  Category: 
+2017-09-05 10:46:31.1136 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:31.1136 INFO start Supplier: 
+2017-09-05 10:46:40.6791 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:46:40.6821 INFO End  Subsubategory: 
+2017-09-05 10:46:40.6510 INFO End  WarehouseCategory: 
+2017-09-05 10:46:40.7131 INFO End  Supplier: 
+2017-09-05 10:48:52.8100 INFO start Subsubategory: 
+2017-09-05 10:48:52.8100 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.8320 INFO start City: 
+2017-09-05 10:48:52.8400 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.8400 INFO End  Subsubategory: 
+2017-09-05 10:48:52.8400 INFO End  City: 
+2017-09-05 10:48:52.8400 INFO start TaxGroup: 
+2017-09-05 10:48:52.8740 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.8570 INFO start Category: 
+2017-09-05 10:48:52.8570 INFO start SubCategory: 
+2017-09-05 10:48:52.8740 INFO start Category: 
+2017-09-05 10:48:52.8740 INFO End  TaxGroup: 
+2017-09-05 10:48:52.8860 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.8860 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.8860 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:52.9451 INFO End  Category: 
+2017-09-05 10:48:52.9551 INFO End  SubCategory: 
+2017-09-05 10:48:52.9701 INFO start Supplier: 
+2017-09-05 10:48:56.3239 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:48:56.3239 INFO End  WarehouseCategory: 
+2017-09-05 10:48:56.3680 INFO End  Supplier: 
+2017-09-05 10:49:46.4317 INFO start SubCategory: 
+2017-09-05 10:49:46.4317 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.4317 INFO start TaxGroup: 
+2017-09-05 10:49:46.4508 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.4508 INFO start Subsubategory: 
+2017-09-05 10:49:46.4317 INFO start City: 
+2017-09-05 10:49:46.4508 INFO End  SubCategory: 
+2017-09-05 10:49:46.4688 INFO End  TaxGroup: 
+2017-09-05 10:49:46.4688 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.4688 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.5168 INFO start Category: 
+2017-09-05 10:49:46.5168 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.5318 INFO End  Subsubategory: 
+2017-09-05 10:49:46.5318 INFO End  City: 
+2017-09-05 10:49:46.5458 INFO End  Category: 
+2017-09-05 10:49:46.5458 INFO start Supplier: 
+2017-09-05 10:49:46.5849 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.5879 INFO start Category: 
+2017-09-05 10:49:46.5879 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:49:46.5879 INFO End  Supplier: 
+2017-09-05 10:51:32.3909 INFO End  WarehouseCategory: 
+2017-09-05 10:52:15.1928 INFO start SubCategory: 
+2017-09-05 10:52:15.1988 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.1988 INFO start Subsubategory: 
+2017-09-05 10:52:15.2309 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.2459 INFO End  SubCategory: 
+2017-09-05 10:52:15.2459 INFO start City: 
+2017-09-05 10:52:15.2819 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.3489 INFO End  City: 
+2017-09-05 10:52:15.1988 INFO start Category: 
+2017-09-05 10:52:15.3820 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.2609 INFO End  Subsubategory: 
+2017-09-05 10:52:15.2609 INFO start TaxGroup: 
+2017-09-05 10:52:15.4070 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.3940 INFO start Supplier: 
+2017-09-05 10:52:15.4270 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:15.4330 INFO End  TaxGroup: 
+2017-09-05 10:52:15.4070 INFO start Category: 
+2017-09-05 10:52:15.4070 INFO End  Category: 
+2017-09-05 10:52:15.4480 INFO End  Supplier: 
+2017-09-05 10:52:15.4480 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:52:21.5198 INFO End  WarehouseCategory: 
+2017-09-05 10:55:28.5550 INFO User ID : 1 , Company Id : 1
+2017-09-05 10:55:50.6059 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 11:20:00.7854 INFO start SubCategory: 
+2017-09-05 11:20:00.7924 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:00.7854 INFO start Category: 
+2017-09-05 11:20:00.7854 INFO start TaxGroup: 
+2017-09-05 11:20:00.7854 INFO start City: 
+2017-09-05 11:20:00.7854 INFO start Subsubategory: 
+2017-09-05 11:20:00.7924 INFO start Category: 
+2017-09-05 11:20:00.8125 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:00.8125 INFO End  SubCategory: 
+2017-09-05 11:20:00.8335 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:00.8395 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:00.8125 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:00.8395 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:04.8433 INFO End  Category: 
+2017-09-05 11:20:04.8433 INFO End  City: 
+2017-09-05 11:20:04.8713 INFO End  TaxGroup: 
+2017-09-05 11:20:04.8433 INFO End  WarehouseCategory: 
+2017-09-05 11:20:04.9234 INFO End  Subsubategory: 
+2017-09-05 11:20:04.9674 INFO start Supplier: 
+2017-09-05 11:20:04.9904 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:05.0485 INFO End  Supplier: 
+2017-09-05 11:20:39.7810 INFO start Subsubategory: 
+2017-09-05 11:20:39.7940 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.7810 INFO start City: 
+2017-09-05 11:20:39.8240 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.8240 INFO End  Subsubategory: 
+2017-09-05 11:20:39.8570 INFO End  City: 
+2017-09-05 11:20:39.8570 INFO start Category: 
+2017-09-05 11:20:39.8701 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.8701 INFO start Category: 
+2017-09-05 11:20:39.8570 INFO start SubCategory: 
+2017-09-05 11:20:39.8881 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.8881 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.9121 INFO start Supplier: 
+2017-09-05 11:20:39.8701 INFO start TaxGroup: 
+2017-09-05 11:20:41.9479 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:39.8881 INFO End  Category: 
+2017-09-05 11:20:41.9479 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:20:41.9479 INFO End  SubCategory: 
+2017-09-05 11:20:41.9479 INFO End  WarehouseCategory: 
+2017-09-05 11:20:41.9699 INFO End  TaxGroup: 
+2017-09-05 11:20:41.9840 INFO End  Supplier: 
+2017-09-05 11:38:41.7519 INFO start City: 
+2017-09-05 11:38:41.7519 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:41.7519 INFO start Subsubategory: 
+2017-09-05 11:38:41.7689 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:41.7809 INFO start TaxGroup: 
+2017-09-05 11:38:41.7689 INFO start Category: 
+2017-09-05 11:38:41.7689 INFO End  City: 
+2017-09-05 11:38:41.7809 INFO End  Subsubategory: 
+2017-09-05 11:38:41.7929 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:41.7809 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:41.8079 INFO start SubCategory: 
+2017-09-05 11:38:41.8470 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:41.8670 INFO End  Category: 
+2017-09-05 11:38:41.8690 INFO End  TaxGroup: 
+2017-09-05 11:38:41.9410 INFO End  SubCategory: 
+2017-09-05 11:38:42.0671 INFO start Category: 
+2017-09-05 11:38:42.0761 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:42.0761 INFO start Supplier: 
+2017-09-05 11:38:44.3948 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:38:44.3948 INFO End  WarehouseCategory: 
+2017-09-05 11:38:44.4118 INFO End  Supplier: 
+2017-09-05 11:39:46.0551 INFO start TaxGroup: 
+2017-09-05 11:39:46.0571 INFO start City: 
+2017-09-05 11:39:46.0571 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.0571 INFO start SubCategory: 
+2017-09-05 11:39:46.0571 INFO start Subsubategory: 
+2017-09-05 11:39:46.0571 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.0781 INFO End  TaxGroup: 
+2017-09-05 11:39:46.0781 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.0781 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.1232 INFO start Category: 
+2017-09-05 11:39:46.1022 INFO End  City: 
+2017-09-05 11:39:46.1232 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.1842 INFO End  Subsubategory: 
+2017-09-05 11:39:46.1842 INFO start Supplier: 
+2017-09-05 11:39:46.1842 INFO End  SubCategory: 
+2017-09-05 11:39:46.1842 INFO End  Category: 
+2017-09-05 11:39:46.2172 INFO start Category: 
+2017-09-05 11:39:46.2172 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:46.2463 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:39:47.9429 INFO End  Supplier: 
+2017-09-05 11:39:47.9509 INFO End  WarehouseCategory: 
+2017-09-05 11:40:11.9808 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:40:19.3455 INFO Get Company: 
+2017-09-05 11:40:19.3455 INFO End Get Company: 
+2017-09-05 11:40:19.4716 INFO start Warehouse: 
+2017-09-05 11:40:19.4716 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:40:19.4716 INFO start ItemMaster: 
+2017-09-05 11:40:19.4916 INFO User ID : 1 , Company Id : 1
+2017-09-05 11:40:19.4916 INFO End  Warehouse: 
+2017-09-05 11:40:19.5146 INFO End ItemMaster: 
+2017-09-05 12:20:34.8036 INFO start Subsubategory: 
+2017-09-05 12:20:34.8066 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.8066 INFO start Category: 
+2017-09-05 12:20:34.8256 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.8066 INFO start Category: 
+2017-09-05 12:20:34.8066 INFO start City: 
+2017-09-05 12:20:34.8066 INFO start TaxGroup: 
+2017-09-05 12:20:34.8256 INFO start SubCategory: 
+2017-09-05 12:20:34.8256 INFO End  Subsubategory: 
+2017-09-05 12:20:34.8506 INFO End  Category: 
+2017-09-05 12:20:34.8506 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.8776 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.8506 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.8856 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:34.9306 INFO End  TaxGroup: 
+2017-09-05 12:20:34.9306 INFO start Supplier: 
+2017-09-05 12:20:34.9276 INFO End  City: 
+2017-09-05 12:20:37.1607 INFO End  WarehouseCategory: 
+2017-09-05 12:20:37.1647 INFO End  SubCategory: 
+2017-09-05 12:20:37.1647 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:20:37.2098 INFO End  Supplier: 
+2017-09-05 12:31:47.6856 INFO start City: 
+2017-09-05 12:31:47.6856 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7026 INFO start TaxGroup: 
+2017-09-05 12:31:47.7126 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7257 INFO start Category: 
+2017-09-05 12:31:47.7126 INFO start Subsubategory: 
+2017-09-05 12:31:47.7126 INFO start SubCategory: 
+2017-09-05 12:31:47.7126 INFO start Category: 
+2017-09-05 12:31:47.7257 INFO End  City: 
+2017-09-05 12:31:47.7467 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7587 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7587 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7467 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:47.7467 INFO End  TaxGroup: 
+2017-09-05 12:31:50.3926 INFO End  SubCategory: 
+2017-09-05 12:31:47.7907 INFO start Supplier: 
+2017-09-05 12:31:50.4186 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:31:50.3806 INFO End  Category: 
+2017-09-05 12:31:50.3926 INFO End  WarehouseCategory: 
+2017-09-05 12:31:50.4186 INFO End  Subsubategory: 
+2017-09-05 12:31:50.4606 INFO End  Supplier: 
+2017-09-05 12:44:36.4990 INFO start Warehouse: 
+2017-09-05 12:44:36.4990 INFO Get Company: 
+2017-09-05 12:44:36.5150 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:44:36.5150 INFO End Get Company: 
+2017-09-05 12:44:40.3797 INFO End  Warehouse: 
+2017-09-05 12:44:40.7390 INFO start get all Sales Executive: 
+2017-09-05 12:44:40.7440 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:11.9285 INFO start Warehouse: 
+2017-09-05 12:48:11.9375 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:11.9455 INFO start ItemMaster: 
+2017-09-05 12:48:11.9785 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:11.9715 INFO Get Company: 
+2017-09-05 12:48:11.9965 INFO End Get Company: 
+2017-09-05 12:48:11.9715 INFO End  Warehouse: 
+2017-09-05 12:48:12.1466 INFO End ItemMaster: 
+2017-09-05 12:48:21.9569 INFO start City: 
+2017-09-05 12:48:21.9759 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:21.9989 INFO start SubCategory: 
+2017-09-05 12:48:22.0159 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:22.0159 INFO start Subsubategory: 
+2017-09-05 12:48:22.0410 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:21.9989 INFO start TaxGroup: 
+2017-09-05 12:48:22.0930 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:22.0410 INFO End  City: 
+2017-09-05 12:48:22.0930 INFO start Category: 
+2017-09-05 12:48:22.0930 INFO End  SubCategory: 
+2017-09-05 12:48:22.1110 INFO End  Subsubategory: 
+2017-09-05 12:48:22.1811 INFO End  TaxGroup: 
+2017-09-05 12:48:22.1811 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:22.1500 INFO start Category: 
+2017-09-05 12:48:24.4120 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:24.4160 INFO start Supplier: 
+2017-09-05 12:48:24.4450 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:48:24.4450 INFO End  WarehouseCategory: 
+2017-09-05 12:48:24.4681 INFO End  Category: 
+2017-09-05 12:48:24.5361 INFO End  Supplier: 
+2017-09-05 12:49:47.4838 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:49:50.7362 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 12:50:34.5347 INFO start Category: 
+2017-09-05 12:50:34.5487 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:34.5557 INFO start City: 
+2017-09-05 12:50:34.5557 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:34.5557 INFO start TaxGroup: 
+2017-09-05 12:50:34.5868 INFO End  City: 
+2017-09-05 12:50:34.5868 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:34.5838 INFO End  Category: 
+2017-09-05 12:50:34.6308 INFO End  TaxGroup: 
+2017-09-05 12:50:34.5868 INFO start Category: 
+2017-09-05 12:50:34.6498 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:34.6108 INFO start SubCategory: 
+2017-09-05 12:50:34.5838 INFO start Subsubategory: 
+2017-09-05 12:50:44.3091 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:44.3091 INFO End  WarehouseCategory: 
+2017-09-05 12:50:44.2981 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:44.3461 INFO End  Subsubategory: 
+2017-09-05 12:50:44.3832 INFO start Supplier: 
+2017-09-05 12:50:44.3832 INFO End  SubCategory: 
+2017-09-05 12:50:44.3832 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:50:44.4182 INFO End  Supplier: 
+2017-09-05 12:52:45.3356 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:52:47.8938 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 12:53:13.3287 INFO start City: 
+2017-09-05 12:53:13.3287 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.3597 INFO start SubCategory: 
+2017-09-05 12:53:13.3667 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.3597 INFO start Subsubategory: 
+2017-09-05 12:53:13.4038 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.3597 INFO start TaxGroup: 
+2017-09-05 12:53:13.3667 INFO End  City: 
+2017-09-05 12:53:13.3918 INFO start Category: 
+2017-09-05 12:53:13.4038 INFO End  SubCategory: 
+2017-09-05 12:53:13.4138 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.4138 INFO End  Subsubategory: 
+2017-09-05 12:53:13.4138 INFO start Category: 
+2017-09-05 12:53:13.4968 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.4508 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.4968 INFO End  TaxGroup: 
+2017-09-05 12:53:13.5329 INFO End  Category: 
+2017-09-05 12:53:13.4908 INFO start Supplier: 
+2017-09-05 12:53:13.5509 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:53:13.5329 INFO End  WarehouseCategory: 
+2017-09-05 12:53:13.5669 INFO End  Supplier: 
+2017-09-05 12:56:00.7992 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:03.2515 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 12:56:17.0943 INFO start Category: 
+2017-09-05 12:56:17.1264 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1264 INFO start Subsubategory: 
+2017-09-05 12:56:17.0943 INFO start City: 
+2017-09-05 12:56:17.0943 INFO start TaxGroup: 
+2017-09-05 12:56:17.0943 INFO start SubCategory: 
+2017-09-05 12:56:17.1524 INFO start Category: 
+2017-09-05 12:56:17.1524 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1654 INFO End  Category: 
+2017-09-05 12:56:17.1654 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1824 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1654 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1824 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.1994 INFO End  Subsubategory: 
+2017-09-05 12:56:17.2114 INFO End  City: 
+2017-09-05 12:56:17.2264 INFO End  WarehouseCategory: 
+2017-09-05 12:56:17.1994 INFO start Supplier: 
+2017-09-05 12:56:17.2624 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:17.2264 INFO End  TaxGroup: 
+2017-09-05 12:56:17.2114 INFO End  SubCategory: 
+2017-09-05 12:56:17.2985 INFO End  Supplier: 
+2017-09-05 12:56:36.9209 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:56:45.8038 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 12:57:14.8610 INFO start Warehouse: 
+2017-09-05 12:57:14.8710 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:14.8710 INFO start ItemMaster: 
+2017-09-05 12:57:14.8710 INFO Get Company: 
+2017-09-05 12:57:14.9280 INFO End Get Company: 
+2017-09-05 12:57:14.9090 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:14.9090 INFO End  Warehouse: 
+2017-09-05 12:57:15.1062 INFO End ItemMaster: 
+2017-09-05 12:57:31.6369 INFO start City: 
+2017-09-05 12:57:31.6369 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.6479 INFO start TaxGroup: 
+2017-09-05 12:57:31.6479 INFO start Category: 
+2017-09-05 12:57:31.6659 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.6479 INFO start Subsubategory: 
+2017-09-05 12:57:31.6479 INFO start SubCategory: 
+2017-09-05 12:57:31.6479 INFO End  City: 
+2017-09-05 12:57:31.6479 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.6840 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.6659 INFO End  Category: 
+2017-09-05 12:57:31.6659 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.6479 INFO start Category: 
+2017-09-05 12:57:31.7000 INFO End  TaxGroup: 
+2017-09-05 12:57:31.7000 INFO start Supplier: 
+2017-09-05 12:57:31.7000 INFO End  SubCategory: 
+2017-09-05 12:57:31.7190 INFO End  Subsubategory: 
+2017-09-05 12:57:31.7190 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.7330 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:31.7540 INFO End  WarehouseCategory: 
+2017-09-05 12:57:31.7700 INFO End  Supplier: 
+2017-09-05 12:57:57.2216 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:57:59.0695 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 12:58:11.5593 INFO Get Company: 
+2017-09-05 12:58:11.5593 INFO End Get Company: 
+2017-09-05 12:58:11.6804 INFO start Warehouse: 
+2017-09-05 12:58:11.6804 INFO start ItemMaster: 
+2017-09-05 12:58:11.6804 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:58:11.6944 INFO User ID : 1 , Company Id : 1
+2017-09-05 12:58:11.6944 INFO End  Warehouse: 
+2017-09-05 12:58:11.7184 INFO End ItemMaster: 
+2017-09-05 13:06:07.7018 INFO start Warehouse: 
+2017-09-05 13:06:07.7328 INFO User ID : 1 , Company Id : 1
+2017-09-05 13:06:07.8729 INFO End  Warehouse: 
+2017-09-05 13:06:08.4383 INFO Get Company: 
+2017-09-05 13:06:08.4443 INFO End Get Company: 
+2017-09-05 13:06:08.5174 INFO start Warehouse: 
+2017-09-05 13:06:08.5174 INFO User ID : 1 , Company Id : 1
+2017-09-05 13:06:08.5334 INFO End  Warehouse: 
+2017-09-05 13:06:08.6635 INFO start get all Sales Executive: 
+2017-09-05 13:06:08.6635 INFO User ID : 1 , Company Id : 1
+2017-09-05 13:06:15.6414 INFO start Warehouse: 
+2017-09-05 13:06:15.6414 INFO start ItemMaster: 
+2017-09-05 13:06:15.6565 INFO User ID : 1 , Company Id : 1
+2017-09-05 13:06:15.6414 INFO User ID : 1 , Company Id : 1
+2017-09-05 13:06:15.6815 INFO End  Warehouse: 
+2017-09-05 13:06:15.7495 INFO End ItemMaster: 
+2017-09-05 13:06:24.2801 INFO start Slider: 
+2017-09-05 13:06:24.3041 INFO End  Slider: 
+2017-09-05 13:06:33.0931 INFO start logo upload
+2017-09-05 13:06:33.1031 INFO User ID : 0 , Company Id : 0
+2017-09-05 13:06:35.0615 INFO put Slider: 
+2017-09-05 14:17:19.6608 INFO start logo upload
+2017-09-05 14:17:19.6688 INFO User ID : 0 , Company Id : 0
+2017-09-05 14:17:22.2118 INFO put Slider: 
+2017-09-05 14:17:27.7775 INFO start Warehouse: 
+2017-09-05 14:17:27.7925 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:17:27.7925 INFO start ItemMaster: 
+2017-09-05 14:17:27.8125 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:17:27.8125 INFO End  Warehouse: 
+2017-09-05 14:17:27.8376 INFO End ItemMaster: 
+2017-09-05 14:18:55.6333 INFO start City: 
+2017-09-05 14:18:55.6333 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.6333 INFO start SubCategory: 
+2017-09-05 14:18:55.6504 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.6504 INFO start Subsubategory: 
+2017-09-05 14:18:55.6644 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.6504 INFO start TaxGroup: 
+2017-09-05 14:18:55.6884 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.6954 INFO start Category: 
+2017-09-05 14:18:55.7224 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.6954 INFO End  SubCategory: 
+2017-09-05 14:18:55.7474 INFO End  TaxGroup: 
+2017-09-05 14:18:55.6954 INFO End  City: 
+2017-09-05 14:18:55.7224 INFO End  Subsubategory: 
+2017-09-05 14:18:55.7875 INFO End  Category: 
+2017-09-05 14:18:55.8745 INFO start Category: 
+2017-09-05 14:18:55.8895 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.9025 INFO start Supplier: 
+2017-09-05 14:18:55.9025 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:18:55.9376 INFO End  WarehouseCategory: 
+2017-09-05 14:18:56.0376 INFO End  Supplier: 
+2017-09-05 14:19:22.4012 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:27.2302 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:19:30.3498 INFO start TaxGroup: 
+2017-09-05 14:19:30.3558 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.3558 INFO End  TaxGroup: 
+2017-09-05 14:19:30.3668 INFO start City: 
+2017-09-05 14:19:30.4119 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.3869 INFO start SubCategory: 
+2017-09-05 14:19:30.4339 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.4339 INFO End  City: 
+2017-09-05 14:19:30.4509 INFO start Category: 
+2017-09-05 14:19:30.3869 INFO start Subsubategory: 
+2017-09-05 14:19:30.4939 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.4339 INFO start Category: 
+2017-09-05 14:19:30.5250 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.4649 INFO End  SubCategory: 
+2017-09-05 14:19:30.4809 INFO start Supplier: 
+2017-09-05 14:19:30.4809 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.5250 INFO End  Subsubategory: 
+2017-09-05 14:19:30.5930 INFO End  WarehouseCategory: 
+2017-09-05 14:19:30.5640 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:30.6531 INFO End  Supplier: 
+2017-09-05 14:19:30.5640 INFO End  Category: 
+2017-09-05 14:19:44.9328 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:48.5273 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:19:52.4281 INFO start SubCategory: 
+2017-09-05 14:19:52.4291 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.4291 INFO start TaxGroup: 
+2017-09-05 14:19:52.4291 INFO start City: 
+2017-09-05 14:19:52.4291 INFO start Subsubategory: 
+2017-09-05 14:19:52.4451 INFO End  SubCategory: 
+2017-09-05 14:19:52.4451 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.4451 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.4451 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.4681 INFO start Category: 
+2017-09-05 14:19:52.4821 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.4681 INFO End  TaxGroup: 
+2017-09-05 14:19:52.4821 INFO End  Subsubategory: 
+2017-09-05 14:19:52.4821 INFO End  City: 
+2017-09-05 14:19:52.5142 INFO End  Category: 
+2017-09-05 14:19:52.5812 INFO start Category: 
+2017-09-05 14:19:52.5872 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.6172 INFO start Supplier: 
+2017-09-05 14:19:52.6472 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:19:52.6492 INFO End  WarehouseCategory: 
+2017-09-05 14:19:52.6653 INFO End  Supplier: 
+2017-09-05 14:20:03.7870 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:05.1810 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:20:08.2342 INFO start TaxGroup: 
+2017-09-05 14:20:08.2342 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.2342 INFO start SubCategory: 
+2017-09-05 14:20:08.2572 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.2572 INFO start Category: 
+2017-09-05 14:20:08.2562 INFO End  TaxGroup: 
+2017-09-05 14:20:08.2572 INFO start City: 
+2017-09-05 14:20:08.2902 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.2742 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.2572 INFO start Category: 
+2017-09-05 14:20:08.3092 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.2742 INFO start Subsubategory: 
+2017-09-05 14:20:08.2742 INFO End  SubCategory: 
+2017-09-05 14:20:08.3092 INFO End  City: 
+2017-09-05 14:20:08.3222 INFO End  WarehouseCategory: 
+2017-09-05 14:20:08.3222 INFO End  Category: 
+2017-09-05 14:20:08.3222 INFO start Supplier: 
+2017-09-05 14:20:08.4363 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.3222 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:08.5114 INFO End  Supplier: 
+2017-09-05 14:20:08.5284 INFO End  Subsubategory: 
+2017-09-05 14:20:21.6328 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.3660 INFO start Category: 
+2017-09-05 14:20:51.3720 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.3840 INFO start City: 
+2017-09-05 14:20:51.3840 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.3840 INFO start SubCategory: 
+2017-09-05 14:20:51.4011 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.4011 INFO start TaxGroup: 
+2017-09-05 14:20:51.4161 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.4011 INFO End  Category: 
+2017-09-05 14:20:51.4011 INFO End  City: 
+2017-09-05 14:20:51.4421 INFO End  TaxGroup: 
+2017-09-05 14:20:51.4161 INFO start Subsubategory: 
+2017-09-05 14:20:51.4161 INFO End  SubCategory: 
+2017-09-05 14:20:51.4921 INFO start Category: 
+2017-09-05 14:20:51.5211 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.4921 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.5352 INFO start Supplier: 
+2017-09-05 14:20:51.5582 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:20:51.5582 INFO End  WarehouseCategory: 
+2017-09-05 14:20:51.5752 INFO End  Subsubategory: 
+2017-09-05 14:20:51.5902 INFO End  Supplier: 
+2017-09-05 14:21:11.2317 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:12.9569 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:21:18.0115 INFO start Subsubategory: 
+2017-09-05 14:21:18.0115 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0255 INFO start TaxGroup: 
+2017-09-05 14:21:18.0255 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0255 INFO End  Subsubategory: 
+2017-09-05 14:21:18.0576 INFO start Category: 
+2017-09-05 14:21:18.0716 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0576 INFO start SubCategory: 
+2017-09-05 14:21:18.0716 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0896 INFO start Category: 
+2017-09-05 14:21:18.0896 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0716 INFO End  Category: 
+2017-09-05 14:21:18.0436 INFO End  TaxGroup: 
+2017-09-05 14:21:18.1336 INFO End  WarehouseCategory: 
+2017-09-05 14:21:18.1086 INFO End  SubCategory: 
+2017-09-05 14:21:18.1516 INFO start Supplier: 
+2017-09-05 14:21:18.2057 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.0576 INFO start City: 
+2017-09-05 14:21:18.2317 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:18.2647 INFO End  Supplier: 
+2017-09-05 14:21:18.2647 INFO End  City: 
+2017-09-05 14:21:30.1275 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:30.9721 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:21:33.6036 INFO start TaxGroup: 
+2017-09-05 14:21:33.6036 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6036 INFO start SubCategory: 
+2017-09-05 14:21:33.6246 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6326 INFO start Category: 
+2017-09-05 14:21:33.6036 INFO start Subsubategory: 
+2017-09-05 14:21:33.6036 INFO start City: 
+2017-09-05 14:21:33.6326 INFO End  TaxGroup: 
+2017-09-05 14:21:33.6326 INFO End  SubCategory: 
+2017-09-05 14:21:33.6326 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6326 INFO start Category: 
+2017-09-05 14:21:33.6326 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6787 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6927 INFO End  Subsubategory: 
+2017-09-05 14:21:33.6517 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.6957 INFO End  Category: 
+2017-09-05 14:21:33.7207 INFO End  City: 
+2017-09-05 14:21:33.6957 INFO End  WarehouseCategory: 
+2017-09-05 14:21:33.6957 INFO start Supplier: 
+2017-09-05 14:21:33.7557 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:33.8058 INFO End  Supplier: 
+2017-09-05 14:21:45.2781 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:46.3458 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:21:50.3857 INFO start City: 
+2017-09-05 14:21:50.3857 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.4047 INFO End  City: 
+2017-09-05 14:21:50.4047 INFO start TaxGroup: 
+2017-09-05 14:21:50.4187 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.4187 INFO start Category: 
+2017-09-05 14:21:50.4307 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.4187 INFO start Subsubategory: 
+2017-09-05 14:21:50.4517 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.4667 INFO End  WarehouseCategory: 
+2017-09-05 14:21:50.4187 INFO start SubCategory: 
+2017-09-05 14:21:50.4187 INFO start Category: 
+2017-09-05 14:21:50.4517 INFO End  TaxGroup: 
+2017-09-05 14:21:50.4667 INFO start Supplier: 
+2017-09-05 14:21:50.4767 INFO End  Subsubategory: 
+2017-09-05 14:21:50.5068 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.5278 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.5578 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:21:50.6689 INFO End  SubCategory: 
+2017-09-05 14:21:50.6829 INFO End  Category: 
+2017-09-05 14:21:50.6829 INFO End  Supplier: 
+2017-09-05 14:21:59.9167 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:00.8874 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:22:47.1522 INFO start TaxGroup: 
+2017-09-05 14:22:47.1732 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.1842 INFO End  TaxGroup: 
+2017-09-05 14:22:47.1842 INFO start Category: 
+2017-09-05 14:22:47.1982 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.1842 INFO start SubCategory: 
+2017-09-05 14:22:47.1522 INFO start Category: 
+2017-09-05 14:22:47.2572 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.2572 INFO End  WarehouseCategory: 
+2017-09-05 14:22:47.1982 INFO start City: 
+2017-09-05 14:22:47.1842 INFO start Subsubategory: 
+2017-09-05 14:22:47.2572 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.2903 INFO start Supplier: 
+2017-09-05 14:22:47.2903 INFO End  Category: 
+2017-09-05 14:22:47.2903 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.3123 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.3393 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:22:47.3393 INFO End  SubCategory: 
+2017-09-05 14:22:47.4194 INFO End  Supplier: 
+2017-09-05 14:22:47.3873 INFO End  City: 
+2017-09-05 14:22:47.4124 INFO End  Subsubategory: 
+2017-09-05 14:23:14.6140 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:15.8929 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:23:19.3213 INFO start SubCategory: 
+2017-09-05 14:23:19.3213 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.3213 INFO start Category: 
+2017-09-05 14:23:19.3383 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.3383 INFO End  SubCategory: 
+2017-09-05 14:23:19.3573 INFO start Category: 
+2017-09-05 14:23:19.3573 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.3213 INFO start Subsubategory: 
+2017-09-05 14:23:19.3694 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.3694 INFO End  Category: 
+2017-09-05 14:23:19.3694 INFO start City: 
+2017-09-05 14:23:19.3694 INFO start TaxGroup: 
+2017-09-05 14:23:19.3694 INFO End  WarehouseCategory: 
+2017-09-05 14:23:19.4184 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.4424 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.3994 INFO End  Subsubategory: 
+2017-09-05 14:23:19.4654 INFO start Supplier: 
+2017-09-05 14:23:19.5365 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:19.5035 INFO End  City: 
+2017-09-05 14:23:19.5215 INFO End  TaxGroup: 
+2017-09-05 14:23:19.5895 INFO End  Supplier: 
+2017-09-05 14:23:34.4995 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:35.5983 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:23:45.7230 INFO start TaxGroup: 
+2017-09-05 14:23:45.7290 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.7290 INFO start Subsubategory: 
+2017-09-05 14:23:45.7430 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.7290 INFO start City: 
+2017-09-05 14:23:45.7600 INFO start Category: 
+2017-09-05 14:23:45.7290 INFO start Category: 
+2017-09-05 14:23:45.7230 INFO start SubCategory: 
+2017-09-05 14:23:45.7430 INFO End  TaxGroup: 
+2017-09-05 14:23:45.7600 INFO End  Subsubategory: 
+2017-09-05 14:23:45.7600 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.8250 INFO End  City: 
+2017-09-05 14:23:45.7600 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.7740 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.7740 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.8821 INFO End  WarehouseCategory: 
+2017-09-05 14:23:45.8581 INFO start Supplier: 
+2017-09-05 14:23:45.9041 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:23:45.8821 INFO End  Category: 
+2017-09-05 14:23:45.8821 INFO End  SubCategory: 
+2017-09-05 14:23:45.9702 INFO End  Supplier: 
+2017-09-05 14:23:58.0837 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:00.9507 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:24:50.1729 INFO start Subsubategory: 
+2017-09-05 14:24:50.1789 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.1729 INFO start TaxGroup: 
+2017-09-05 14:24:50.1729 INFO start City: 
+2017-09-05 14:24:50.1969 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.1789 INFO start SubCategory: 
+2017-09-05 14:24:50.1789 INFO End  Subsubategory: 
+2017-09-05 14:24:50.1789 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.1969 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.1969 INFO End  City: 
+2017-09-05 14:24:50.2279 INFO End  SubCategory: 
+2017-09-05 14:24:50.2279 INFO End  TaxGroup: 
+2017-09-05 14:24:50.2279 INFO start Category: 
+2017-09-05 14:24:50.2690 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.2690 INFO start Category: 
+2017-09-05 14:24:50.2930 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.2930 INFO End  Category: 
+2017-09-05 14:24:50.2690 INFO start Supplier: 
+2017-09-05 14:24:50.3460 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:24:50.3320 INFO End  WarehouseCategory: 
+2017-09-05 14:24:50.3851 INFO End  Supplier: 
+2017-09-05 14:25:10.0040 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.8742 INFO start Subsubategory: 
+2017-09-05 14:25:15.8742 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.8742 INFO start City: 
+2017-09-05 14:25:15.8992 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.8822 INFO start SubCategory: 
+2017-09-05 14:25:15.9142 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.8822 INFO start Category: 
+2017-09-05 14:25:15.8822 INFO start TaxGroup: 
+2017-09-05 14:25:15.8992 INFO End  Subsubategory: 
+2017-09-05 14:25:15.9142 INFO End  City: 
+2017-09-05 14:25:15.9142 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.9142 INFO End  SubCategory: 
+2017-09-05 14:25:15.9142 INFO start Category: 
+2017-09-05 14:25:15.9612 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.9612 INFO End  Category: 
+2017-09-05 14:25:15.9322 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.9812 INFO start Supplier: 
+2017-09-05 14:25:15.9952 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:15.9812 INFO End  WarehouseCategory: 
+2017-09-05 14:25:16.0353 INFO End  Supplier: 
+2017-09-05 14:25:15.9812 INFO End  TaxGroup: 
+2017-09-05 14:25:31.2105 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:56.9346 INFO start Subsubategory: 
+2017-09-05 14:25:56.9346 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:56.9507 INFO start TaxGroup: 
+2017-09-05 14:25:56.9507 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:56.9507 INFO start City: 
+2017-09-05 14:25:56.9346 INFO start SubCategory: 
+2017-09-05 14:25:56.9507 INFO End  Subsubategory: 
+2017-09-05 14:25:56.9657 INFO start Category: 
+2017-09-05 14:25:56.9657 INFO End  TaxGroup: 
+2017-09-05 14:25:56.9757 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:56.9657 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:56.9757 INFO start Category: 
+2017-09-05 14:25:56.9757 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:57.0037 INFO End  SubCategory: 
+2017-09-05 14:25:57.0267 INFO End  City: 
+2017-09-05 14:25:57.0267 INFO End  Category: 
+2017-09-05 14:25:57.0677 INFO start Supplier: 
+2017-09-05 14:25:57.0777 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:57.0137 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:25:57.1118 INFO End  Supplier: 
+2017-09-05 14:25:57.1238 INFO End  WarehouseCategory: 
+2017-09-05 14:26:15.9718 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.5348 INFO start City: 
+2017-09-05 14:26:27.5418 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.5418 INFO start Subsubategory: 
+2017-09-05 14:26:27.5618 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.5618 INFO start TaxGroup: 
+2017-09-05 14:26:27.5418 INFO start Category: 
+2017-09-05 14:26:27.5868 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.5618 INFO start SubCategory: 
+2017-09-05 14:26:27.5618 INFO End  City: 
+2017-09-05 14:26:27.5778 INFO End  Subsubategory: 
+2017-09-05 14:26:27.5778 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.5778 INFO start Category: 
+2017-09-05 14:26:27.5868 INFO End  Category: 
+2017-09-05 14:26:27.5868 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.6568 INFO End  TaxGroup: 
+2017-09-05 14:26:27.7639 INFO start Supplier: 
+2017-09-05 14:26:27.7799 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.6348 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:26:27.8129 INFO End  Supplier: 
+2017-09-05 14:26:27.7639 INFO End  SubCategory: 
+2017-09-05 14:26:27.8450 INFO End  WarehouseCategory: 
+2017-09-05 14:26:47.0712 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:22.9806 INFO start Warehouse: 
+2017-09-05 14:28:22.9806 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:23.0047 INFO End  Warehouse: 
+2017-09-05 14:28:23.7902 INFO Get Company: 
+2017-09-05 14:28:23.7902 INFO End Get Company: 
+2017-09-05 14:28:23.8953 INFO start Warehouse: 
+2017-09-05 14:28:23.9013 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:23.9233 INFO End  Warehouse: 
+2017-09-05 14:28:24.0804 INFO start get all Sales Executive: 
+2017-09-05 14:28:24.0964 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:31.8720 INFO start ItemMaster: 
+2017-09-05 14:28:31.8720 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:31.8890 INFO start Warehouse: 
+2017-09-05 14:28:31.8890 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:31.8890 INFO End ItemMaster: 
+2017-09-05 14:28:31.9110 INFO End  Warehouse: 
+2017-09-05 14:28:36.9476 INFO Get Company: 
+2017-09-05 14:28:36.9476 INFO End Get Company: 
+2017-09-05 14:28:37.0406 INFO start Warehouse: 
+2017-09-05 14:28:37.0406 INFO start ItemMaster: 
+2017-09-05 14:28:37.0406 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:37.0406 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:37.0656 INFO End  Warehouse: 
+2017-09-05 14:28:37.0776 INFO End ItemMaster: 
+2017-09-05 14:28:39.2312 INFO Get Company: 
+2017-09-05 14:28:39.2312 INFO End Get Company: 
+2017-09-05 14:28:39.3433 INFO start ItemMaster: 
+2017-09-05 14:28:39.3433 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:39.3433 INFO start Warehouse: 
+2017-09-05 14:28:39.3633 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:28:39.3713 INFO End ItemMaster: 
+2017-09-05 14:28:39.3713 INFO End  Warehouse: 
+2017-09-05 14:30:04.7484 INFO start Warehouse: 
+2017-09-05 14:30:04.7784 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:04.9475 INFO End  Warehouse: 
+2017-09-05 14:30:05.7951 INFO Get Company: 
+2017-09-05 14:30:05.7951 INFO End Get Company: 
+2017-09-05 14:30:05.9192 INFO start Warehouse: 
+2017-09-05 14:30:05.9192 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:05.9352 INFO End  Warehouse: 
+2017-09-05 14:30:06.0623 INFO start get all Sales Executive: 
+2017-09-05 14:30:06.0733 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:11.4451 INFO start Warehouse: 
+2017-09-05 14:30:11.4451 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:11.4842 INFO start ItemMaster: 
+2017-09-05 14:30:11.4992 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:11.5082 INFO End  Warehouse: 
+2017-09-05 14:30:11.6172 INFO End ItemMaster: 
+2017-09-05 14:30:40.1428 INFO start City: 
+2017-09-05 14:30:40.1488 INFO start Subsubategory: 
+2017-09-05 14:30:40.1698 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.1488 INFO start TaxGroup: 
+2017-09-05 14:30:40.1998 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.1488 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.1488 INFO start SubCategory: 
+2017-09-05 14:30:40.1488 INFO start Category: 
+2017-09-05 14:30:40.2759 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.2759 INFO End  City: 
+2017-09-05 14:30:40.2529 INFO End  TaxGroup: 
+2017-09-05 14:30:40.2308 INFO End  Subsubategory: 
+2017-09-05 14:30:40.2699 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.3389 INFO start Category: 
+2017-09-05 14:30:40.4850 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.3389 INFO End  Category: 
+2017-09-05 14:30:40.4850 INFO start Supplier: 
+2017-09-05 14:30:40.5531 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:40.5191 INFO End  SubCategory: 
+2017-09-05 14:30:40.5381 INFO End  WarehouseCategory: 
+2017-09-05 14:30:40.6762 INFO End  Supplier: 
+2017-09-05 14:30:53.6830 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:56.0367 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:30:59.3770 INFO Get Company: 
+2017-09-05 14:30:59.3831 INFO End Get Company: 
+2017-09-05 14:30:59.4721 INFO start ItemMaster: 
+2017-09-05 14:30:59.4781 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:59.4951 INFO start Warehouse: 
+2017-09-05 14:30:59.4951 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:30:59.5121 INFO End ItemMaster: 
+2017-09-05 14:30:59.5462 INFO End  Warehouse: 
+2017-09-05 14:31:29.4181 INFO start City: 
+2017-09-05 14:31:29.4181 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.4311 INFO start Subsubategory: 
+2017-09-05 14:31:29.4311 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.4311 INFO End  City: 
+2017-09-05 14:31:29.4621 INFO End  Subsubategory: 
+2017-09-05 14:31:29.4491 INFO start Category: 
+2017-09-05 14:31:29.4881 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.5101 INFO End  WarehouseCategory: 
+2017-09-05 14:31:29.4881 INFO start TaxGroup: 
+2017-09-05 14:31:29.5231 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.5231 INFO start Supplier: 
+2017-09-05 14:31:29.5231 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.4311 INFO start Category: 
+2017-09-05 14:31:29.5722 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.4491 INFO start SubCategory: 
+2017-09-05 14:31:29.6062 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:29.5692 INFO End  TaxGroup: 
+2017-09-05 14:31:29.6232 INFO End  SubCategory: 
+2017-09-05 14:31:29.5722 INFO End  Supplier: 
+2017-09-05 14:31:29.6232 INFO End  Category: 
+2017-09-05 14:31:50.3231 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:51.1967 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:31:54.7283 INFO Get Company: 
+2017-09-05 14:31:54.7283 INFO End Get Company: 
+2017-09-05 14:31:54.8214 INFO start Warehouse: 
+2017-09-05 14:31:54.8214 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:54.8374 INFO start ItemMaster: 
+2017-09-05 14:31:54.8374 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:54.8374 INFO End  Warehouse: 
+2017-09-05 14:31:54.8614 INFO End ItemMaster: 
+2017-09-05 14:31:59.3467 INFO start Subsubategory: 
+2017-09-05 14:31:59.3517 INFO start City: 
+2017-09-05 14:31:59.3517 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.3467 INFO start TaxGroup: 
+2017-09-05 14:31:59.3747 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.3747 INFO start SubCategory: 
+2017-09-05 14:31:59.3517 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.3877 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.3747 INFO End  City: 
+2017-09-05 14:31:59.3877 INFO End  TaxGroup: 
+2017-09-05 14:31:59.4137 INFO start Category: 
+2017-09-05 14:31:59.3997 INFO End  Subsubategory: 
+2017-09-05 14:31:59.3997 INFO End  SubCategory: 
+2017-09-05 14:31:59.4137 INFO start Category: 
+2017-09-05 14:31:59.4598 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.4137 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.4818 INFO End  Category: 
+2017-09-05 14:31:59.5078 INFO End  WarehouseCategory: 
+2017-09-05 14:31:59.5078 INFO start Supplier: 
+2017-09-05 14:31:59.5478 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:31:59.6239 INFO End  Supplier: 
+2017-09-05 14:32:35.2325 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:37.0508 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:32:40.6383 INFO Get Company: 
+2017-09-05 14:32:40.6383 INFO End Get Company: 
+2017-09-05 14:32:40.7274 INFO start Warehouse: 
+2017-09-05 14:32:40.7274 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:40.7454 INFO End  Warehouse: 
+2017-09-05 14:32:40.7454 INFO start ItemMaster: 
+2017-09-05 14:32:40.7614 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:40.7614 INFO End ItemMaster: 
+2017-09-05 14:32:48.2018 INFO start TaxGroup: 
+2017-09-05 14:32:48.2018 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2209 INFO start City: 
+2017-09-05 14:32:48.2259 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2259 INFO start Category: 
+2017-09-05 14:32:48.2419 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2259 INFO start SubCategory: 
+2017-09-05 14:32:48.2579 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2259 INFO End  TaxGroup: 
+2017-09-05 14:32:48.2419 INFO End  City: 
+2017-09-05 14:32:48.3960 INFO start Category: 
+2017-09-05 14:32:48.4060 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2579 INFO End  Category: 
+2017-09-05 14:32:48.2579 INFO start Subsubategory: 
+2017-09-05 14:32:48.4490 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.2739 INFO End  SubCategory: 
+2017-09-05 14:32:48.4280 INFO End  WarehouseCategory: 
+2017-09-05 14:32:48.4960 INFO start Supplier: 
+2017-09-05 14:32:48.6321 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:32:48.4960 INFO End  Subsubategory: 
+2017-09-05 14:32:48.7522 INFO End  Supplier: 
+2017-09-05 14:33:17.3988 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:17.8701 ERROR Cannot create a file when that file already exists.
+
+2017-09-05 14:33:21.1264 INFO Get Company: 
+2017-09-05 14:33:21.1344 INFO End Get Company: 
+2017-09-05 14:33:21.2204 INFO start ItemMaster: 
+2017-09-05 14:33:21.2264 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:21.2204 INFO start Warehouse: 
+2017-09-05 14:33:21.2444 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:21.2444 INFO End ItemMaster: 
+2017-09-05 14:33:21.2645 INFO End  Warehouse: 
+2017-09-05 14:33:24.9000 INFO Get Company: 
+2017-09-05 14:33:24.9000 INFO End Get Company: 
+2017-09-05 14:33:25.0281 INFO start ItemMaster: 
+2017-09-05 14:33:25.0281 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:25.0391 INFO start Warehouse: 
+2017-09-05 14:33:25.0732 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:25.0732 INFO End ItemMaster: 
+2017-09-05 14:33:25.1032 INFO End  Warehouse: 
+2017-09-05 14:33:57.9525 INFO Get Company: 
+2017-09-05 14:33:57.9525 INFO End Get Company: 
+2017-09-05 14:33:58.0075 INFO start Warehouse: 
+2017-09-05 14:33:58.0075 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:58.0075 INFO start ItemMaster: 
+2017-09-05 14:33:58.0406 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:33:58.0406 INFO End  Warehouse: 
+2017-09-05 14:33:58.0636 INFO End ItemMaster: 
+2017-09-05 14:34:10.2532 INFO Get Company: 
+2017-09-05 14:34:10.2612 INFO End Get Company: 
+2017-09-05 14:34:10.4193 INFO start Warehouse: 
+2017-09-05 14:34:10.4193 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:34:10.4193 INFO start ItemMaster: 
+2017-09-05 14:34:10.4493 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:34:10.4493 INFO End  Warehouse: 
+2017-09-05 14:34:10.4784 INFO End ItemMaster: 
+2017-09-05 14:35:08.8936 INFO start Warehouse: 
+2017-09-05 14:35:08.9346 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:09.0857 INFO End  Warehouse: 
+2017-09-05 14:35:09.8763 INFO Get Company: 
+2017-09-05 14:35:09.8833 INFO End Get Company: 
+2017-09-05 14:35:10.0344 INFO start Warehouse: 
+2017-09-05 14:35:10.0404 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:10.0404 INFO End  Warehouse: 
+2017-09-05 14:35:10.2065 INFO start get all Sales Executive: 
+2017-09-05 14:35:10.2145 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:18.7906 INFO start Warehouse: 
+2017-09-05 14:35:18.7906 INFO start ItemMaster: 
+2017-09-05 14:35:18.8086 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:18.8086 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:18.8276 INFO End  Warehouse: 
+2017-09-05 14:35:18.9297 INFO End ItemMaster: 
+2017-09-05 14:35:23.8612 INFO Get Company: 
+2017-09-05 14:35:23.8712 INFO End Get Company: 
+2017-09-05 14:35:23.9793 INFO start ItemMaster: 
+2017-09-05 14:35:23.9793 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:23.9793 INFO start Warehouse: 
+2017-09-05 14:35:24.0013 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:35:24.0013 INFO End ItemMaster: 
+2017-09-05 14:35:24.0313 INFO End  Warehouse: 
+2017-09-05 14:36:50.3099 INFO start Slider: 
+2017-09-05 14:36:50.3389 INFO End  Slider: 
+2017-09-05 14:37:12.4290 INFO start logo upload
+2017-09-05 14:37:12.4290 INFO User ID : 0 , Company Id : 0
+2017-09-05 14:37:14.4854 INFO Add Slider: 
+2017-09-05 14:37:14.7216 INFO End  Add Slider: 
+2017-09-05 14:37:26.4821 INFO start logo upload
+2017-09-05 14:37:26.5001 INFO User ID : 0 , Company Id : 0
+2017-09-05 14:37:28.0452 INFO Add Slider: 
+2017-09-05 14:37:28.0452 INFO End  Add Slider: 
+2017-09-05 14:37:30.8853 INFO Get Company: 
+2017-09-05 14:37:30.8853 INFO End Get Company: 
+2017-09-05 14:37:30.9753 INFO start Slider: 
+2017-09-05 14:37:30.9813 INFO End  Slider: 
+2017-09-05 14:55:42.8736 INFO start ItemMaster: 
+2017-09-05 14:55:42.8736 INFO start Warehouse: 
+2017-09-05 14:55:42.8736 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:55:42.8876 INFO User ID : 1 , Company Id : 1
+2017-09-05 14:55:42.9066 INFO End ItemMaster: 
+2017-09-05 14:55:42.9066 INFO End  Warehouse: 
+2017-09-05 15:29:53.9284 INFO Get Company: 
+2017-09-05 15:29:53.9284 INFO start Warehouse: 
+2017-09-05 15:29:53.9634 INFO End Get Company: 
+2017-09-05 15:29:53.9634 INFO User ID : 1 , Company Id : 1
+2017-09-05 15:29:58.4696 INFO End  Warehouse: 
+2017-09-05 15:29:59.1411 INFO start get all Sales Executive: 
+2017-09-05 15:29:59.1471 INFO User ID : 1 , Company Id : 1
+2017-09-05 15:30:07.0690 INFO start Slider: 
+2017-09-05 15:30:07.1000 INFO End  Slider: 
+2017-09-05 15:30:26.6709 INFO start logo upload
+2017-09-05 15:30:26.6899 INFO User ID : 0 , Company Id : 0
+2017-09-05 15:30:28.7633 INFO put Slider: 
+2017-09-05 15:31:20.8654 INFO Get Company: 
+2017-09-05 15:31:20.8654 INFO End Get Company: 
+2017-09-05 15:31:20.9225 INFO start Slider: 
+2017-09-05 15:31:20.9315 INFO End  Slider: 
+2017-09-05 15:31:46.2942 INFO start logo upload
+2017-09-05 15:31:46.3052 INFO User ID : 0 , Company Id : 0
+2017-09-05 15:31:48.8229 INFO put Slider: 
+2017-09-05 15:31:51.4768 INFO Get Company: 
+2017-09-05 15:31:51.4768 INFO End Get Company: 
+2017-09-05 15:31:51.6129 INFO start Slider: 
+2017-09-05 15:31:51.6209 INFO End  Slider: 
+2017-09-05 15:32:24.4336 INFO Get Company: 
+2017-09-05 15:32:24.4336 INFO End Get Company: 
+2017-09-05 15:32:24.6157 INFO start Slider: 
+2017-09-05 15:32:24.6157 INFO End  Slider: 
+2017-09-05 15:46:29.3033 INFO start Slider: 
+2017-09-05 15:46:29.3033 INFO End  Slider: 
+2017-09-05 15:46:29.3283 INFO Get Company: 
+2017-09-05 15:46:29.3343 INFO End Get Company: 
+2017-09-05 15:52:29.3244 INFO start logo upload
+2017-09-05 15:52:29.3384 INFO User ID : 0 , Company Id : 0
+2017-09-05 15:52:31.2155 INFO put Slider: 
+2017-09-05 15:52:33.7977 INFO Get Company: 
+2017-09-05 15:52:33.8077 INFO End Get Company: 
+2017-09-05 15:52:33.8767 INFO start Slider: 
+2017-09-05 15:52:33.8887 INFO End  Slider: 
+2017-09-05 15:52:58.4174 INFO start logo upload
+2017-09-05 15:52:58.4174 INFO User ID : 0 , Company Id : 0
+2017-09-05 15:52:59.9343 INFO put Slider: 
+2017-09-05 15:53:02.0898 INFO Get Company: 
+2017-09-05 15:53:02.0898 INFO End Get Company: 
+2017-09-05 15:53:02.2039 INFO start Slider: 
+2017-09-05 15:53:02.2109 INFO End  Slider: 
+2017-09-05 16:07:07.9863 INFO Get Company: 
+2017-09-05 16:07:07.9943 INFO End Get Company: 
+2017-09-05 16:07:08.0173 INFO start Slider: 
+2017-09-05 16:07:08.0243 INFO End  Slider: 

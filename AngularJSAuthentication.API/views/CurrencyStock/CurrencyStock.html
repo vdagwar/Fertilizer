@@ -1,0 +1,759 @@
+﻿<style>
+    /* =============================================================
+      GENERAL STYLES
+    ============================================================ */
+    @media screen {
+        #printSection {
+            display: none;
+        }
+    }
+
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #printSection, #printSection * {
+            visibility: visible;
+        }
+
+        #printSection {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .pad-top-botm {
+        padding-bottom: 40px;
+        padding-top: 22px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+    /* =============================================================
+      PAGE STYLES
+    ============================================================ */
+
+    .contact-info span {
+        font-size: 14px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .contact-info hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .client-info {
+        font-size: 15px;
+    }
+
+    .ttl-amts {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    .containers {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    hr {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+</style>
+<style>
+    .modal-dialog {
+        width: 70% !important;
+    }
+</style>
+<style>
+    @media screen {
+        #printSection {
+            display: none;
+        }
+    }
+
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #printSection, #printSection * {
+            visibility: visible;
+        }
+
+        #printSection {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #printThisElement {
+            display: block !important;
+        }
+
+        #page-break {
+            display: block;
+            page-break-before: always;
+        }
+    }
+
+    #printThisElement {
+        display: none;
+    }
+
+    /* =============================================================
+      GENERAL STYLES
+    ============================================================ */
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .pad-top-botm {
+        padding-bottom: 40px;
+        padding-top: 22px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+    /* =============================================================
+      PAGE STYLES
+    ============================================================ */
+
+    .contact-info span {
+        font-size: 14px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .contact-info hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .client-info {
+        font-size: 15px;
+    }
+
+    .ttl-amts {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    .containers {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .box-size {
+        font-size: 16px !important;
+        height: 30px;
+        width: 50%;
+    }
+</style>
+
+
+
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong>
+                <span class="glyphicon glyphicon-th"> </span>Stock Currency
+            </strong>
+        </div>
+        <div class="form-group col-md-3 pull-right ">
+
+            <button type="button" class="btn btn-ar btn-primary" data-toggle="modal" data-target="#CheckStockDetails" ng-click="Checkdetails()">Check details</button>
+        </div>
+        <br />
+       <table class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr>
+                   <th>
+                        <div class="th">
+                            Total Amount
+                            
+                        </div>
+                    </th>
+                   <th>
+                        <div class="th">
+                           1 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            1 Rupee
+                          
+                        </div>
+                    </th>
+                   <th>
+                        <div class="th">
+                           2 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            2 Rupee
+                          
+                        </div>
+                    </th>
+                    
+                    <th>
+                        <div class="th">
+                          5 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            5 Rupee
+                            
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            10 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            10 Rupee
+                            
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            20 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            20 Rupee
+                          
+                        </div>
+                    </th>
+
+                     <th>
+                        <div class="th">
+                           50 Count
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            50 Rupee
+                            
+                        </div>
+                    </th>
+
+
+                    <th>
+                        <div class="th">
+                           100 Count
+                            
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            100 Rupee
+                          
+                        </div>
+                    </th>
+
+                   
+                    <th>
+                        <div class="th">
+                           500 Count
+                            
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            500 Rupee
+                           
+                        </div>
+                    </th>
+                    
+                    <th>
+                        <div class="th">
+                           2000 Count
+                            
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            2000 Rupee
+                        
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Date
+                            
+                        </div>
+                    </th>
+                    <th  >
+                        <div class="th">
+                          Open
+                           
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                        currency stock history
+
+                        </div>
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="trade in StockCurrencys">
+                   
+                    <td>{{trade.TotalAmount}}</td>
+                  
+                    <td>{{trade.onerscount}}</td>
+                    <td>{{trade.OneRupee}}</td>
+                   
+                    <td>{{trade.tworscount}}</td>
+                    <td>{{trade.TwoRupee}}</td>
+                  
+                    <td>{{trade.fiverscount}}</td>
+                    <td>{{trade.FiveRupee}}</td>
+                   
+                    <td>{{trade.tenrscount}}</td>
+                    <td>{{trade.TenRupee}}</td>
+                   
+                    <td>{{trade.Twentyrscount}}</td>
+                    <td>{{trade.TwentyRupee}}</td>
+                   
+                    <td>{{trade.fiftyrscount}}</td>
+                    <td>{{trade.fiftyRupee}}</td>
+                 
+                    <td>{{trade.hunrscount}}</td>
+                    <td>{{trade.HunRupee}}</td>
+                   
+                    <td>{{trade.fivehrscount}}</td>
+                    <td>{{trade.fiveHRupee}}</td>
+                   
+                    <td>{{trade.twoTHrscount}}</td>
+                    <td>{{trade.twoTHRupee}}</td>
+                    <td>{{trade.CreatedDate | date:'medium'}}</td>
+                    <td><button type="button" class="btn btn-ar btn-primary" id="typography" ng-click="open(trade)" data-dismiss="modal"> Open </button></td>
+                    <td><button type="button" class="btn btn-ar btn-primary" data-toggle="modal" data-target="#oldstock" ng-click="history()" > History </button></td>
+                </tr>
+            </tbody>
+        </table>
+     
+    </section>
+ </div>
+<style>
+    .w3-red {
+        color: #fff !important;
+        background-color: #171616 !important;
+    }
+
+    .w1-red {
+        color: #fff !important;
+        background-color: #4c4948 !important;
+    }
+</style>
+
+<div class="modal fade " id="oldstock" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header w3-red">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title" style="text-align: center;">Currency Stock History</h3>
+            </div>
+           
+            <table class="table table-bordered table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="th">
+                                Total Amount
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                1 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                1 Rupee
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                2 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                2 Rupee
+
+                            </div>
+                        </th>
+
+                        <th>
+                            <div class="th">
+                                5 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                5 Rupee
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                10 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                10 Rupee
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                20 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                20 Rupee
+
+                            </div>
+                        </th>
+
+                        <th>
+                            <div class="th">
+                                50 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                50 Rupee
+
+                            </div>
+                        </th>
+
+
+                        <th>
+                            <div class="th">
+                                100 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                100 Rupee
+
+                            </div>
+                        </th>
+
+
+                        <th>
+                            <div class="th">
+                                500 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                500 Rupee
+
+                            </div>
+                        </th>
+
+                        <th>
+                            <div class="th">
+                                2000 Count
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                2000 Rupee
+
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                Date
+
+                            </div>
+                        </th>
+                        
+                    </tr>
+
+                </thead>
+
+                <tbody>
+               
+                        <tr data-ng-repeat="trade1 in StockCurrencyshistory" >
+                            <td>{{trade1.TotalAmount}}</td>
+
+                            <td>{{trade1.onerscount}}</td>
+                            <td>{{trade1.OneRupee}}</td>
+                            
+                            <td>{{trade1.tworscount}}</td>
+                            <td>{{trade1.TwoRupee}}</td>
+
+                            <td>{{trade1.fiverscount}}</td>
+                            <td>{{trade1.FiveRupee}}</td>
+
+                            <td>{{trade1.tenrscount}}</td>
+                            <td>{{trade1.TenRupee}}</td>
+
+                            <td>{{trade1.Twentyrscount}}</td>
+                            <td>{{trade1.TwentyRupee}}</td>
+
+                            <td>{{trade1.fiftyrscount}}</td>
+                            <td>{{trade1.fiftyRupee}}</td>
+
+                            <td>{{trade1.hunrscount}}</td>
+                            <td>{{trade1.HunRupee}}</td>
+
+                            <td>{{trade1.fivehrscount}}</td>
+                            <td>{{trade1.fiveHRupee}}</td>
+
+                            <td>{{trade1.twoTHrscount}}</td>
+                            <td>{{trade1.twoTHRupee}}</td>
+                            <td>{{trade1.CreatedDate | date:'medium'}}</td>
+                        
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+            <div class="modal-footer w3-red">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="page page-table" id="typography" ng-hide="uploadshow">
+
+    <div>
+       
+        <div class="tab-content">
+            <div class="row ng-scope">
+                <div class="col-xs-6">
+
+                    <div style="margin-top:20px ;"></div><a style="float:left" class="btn btn-link" ng-click="clearCash()"><i class="fa fa-times"></i> Clear Cash</a>
+                    <div class="col-xs-6">
+                        
+
+                        <div id="divtoPrint">
+                            <style>
+                                @media print {
+                                    th, td {
+                                        border: solid #000 !important;
+                                        border-width: 0 1px 1px 0 !important;
+                                    }
+
+                                    .no-print {
+                                        display: none !important;
+                                    }
+
+                                    .border {
+                                        border: 1px solid #000 !important;
+                                    }
+                                }
+                            </style>
+                            <div style="margin-top:20px"></div><div class="table-responsive" style="font-size: 14px; float: left">
+                                <table class="table table-striped">
+                                    <thead><tr><th>Denomination</th><th>Count</th></tr></thead>
+                                    <tbody>
+
+                                        <!--UpdateCode-->
+                                        <tr><td height="10px;" style="height: 10px"><strong>2000x</strong></td><td><input numeric-only="" style="width:40px" ng-model="denominations[2000]" ng-change="addManualCash(2000,denominations[2000])" class="ng-pristine ng-untouched ng-valid"></td></tr>
+                                        <tr><td><strong>500x</strong></td><!--<td>{{getDenominationCount()['500'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[500]" ng-change="addManualCash(500,denominations[500])" class="ng-pristine ng-untouched ng-valid"></td></tr>
+                                        <tr><td><strong>100x</strong></td><!--<td>{{getDenominationCount()['100'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[100]" ng-change="addManualCash(100,denominations[100])" class="ng-pristine ng-untouched ng-valid"></td></tr>
+                                        <tr><td><strong>50x</strong></td><!--<td>{{getDenominationCount()['50'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[50]" ng-change="addManualCash(50,denominations[50])" class="ng-pristine ng-untouched ng-valid"></td></tr>
+                                        <tr><td><strong>20x</strong></td><!--<td>{{getDenominationCount()['20'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[20]" ng-change="addManualCash(20,denominations[20])" class="ng-pristine ng-untouched ng-valid"></td></tr>
+                                    </tbody>
+                                </table>
+                            </div><div style="float:left;font-size: 14px;margin-left: 44px;"><table class="table table-striped"><thead><tr><th>Denomination</th><th>Count</th></tr></thead><tbody><tr><td><strong>10x</strong></td><!--<td>{{getDenominationCount()['10'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[10]" ng-change="addManualCash(10,denominations[10])" class="ng-pristine ng-untouched ng-valid"></td></tr><tr><td><strong>5x</strong></td><!--<td>{{getDenominationCount()['5'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[5]" ng-change="addManualCash(5,denominations[5])" class="ng-pristine ng-untouched ng-valid"></td></tr><tr><td><strong>2x</strong></td><!--<td>{{getDenominationCount()['2'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[2]" ng-change="addManualCash(2,denominations[2])" class="ng-pristine ng-untouched ng-valid"></td></tr><tr><td><strong>1x</strong></td><!--<td>{{getDenominationCount()['1'].length}}</td>--><td><input numeric-only="" style="width:40px" ng-model="denominations[1]" ng-change="addManualCash(1,denominations[1])" class="ng-pristine ng-untouched ng-valid"></td></tr></tbody></table></div>
+                        </div>
+                   </div>
+                </div>
+             
+            </div>
+        </div>
+        <div class="form-group col-md-12 clear-both">
+            <form name="myFormSiteModal">
+                <div class="form-group col-md-3">
+                    <label for="site-name">Amount</label><br>
+                    <input class="form-control" readonly value="{{TotalAmount}}" ng-model="TotalAmount" placeholder="Enter Amount" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name">Bank Amount </label><br>
+                    <input type="number" class="form-control" readonly value="{{TotalAmount1}}" ng-model="TotalAmount1" placeholder="Enter Amount Submitted in bank" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name">Person Name </label><br>
+                    <input class="form-control" ng-model="bnk.name" placeholder="Enter Name " />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name">Person Mobile No</label><br>
+                    <input id="phone" type="number" name="phone" class="form-control" ng-model="bnk.mobile" placeholder="Enter Mobile No" ng-minlength="10" ng-maxlength="10" required />
+                    <span ng-show="myFormSiteModal.phone.$dirty && myFormSiteModal.phone.$invalid">
+                        &nbsp;  <span ng-show="myFormSiteModal.phone.$error.required" style="color:red">Phone Number is required.</span>
+                        <span ng-show="myFormSiteModal.phone.$error.minlength" class="help-block" style="color:red"> phone number should be 10 digits.</span>
+                        <span ng-show="myFormSiteModal.phone.$error.maxlength" class="help-block" style="color:red"> phone number  Max length only 10 digits.</span>
+
+                    </span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name"></label><br />
+                    <button type="button" class="btn btn-ar btn-primary"  ng-disabled="myFormSiteModal.$invalid" ng-click="Settle(bnk)">Settle</button>
+                    <!--<button id="btnPrint" class="btn-sm btn-primary" ng-disabled="myFormSiteModal.$invalid" style="float:right; margin-right: 15px;" onclick="javascript: printDiv('divtoPrint')"> <span class="glyphicon glyphicon-print"> </span> Print Invoice</button>-->
+                </div>
+                <div class="row">
+                    <style>
+                        @media print {
+                            #btnPrint {
+                                display: none !important;
+                            }
+
+                            .printer {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                    <div class="col-lg-4 col-md-4 col-sm-4 printer">
+                        <div class="row pad-top-botm">
+                            <div class="col-lg-12 col-md-12 col-sm-12 printer">
+                                <button id="btnPrint" class="btn-sm btn-primary printer no-print" style="float:right; margin-right: 15px;" onclick="javascript: printDiv('divtoPrint')"> <span class="glyphicon glyphicon-print no-print"> </span> Print Invoice</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      
+
+            <!--<div class="form-group col-md-12 clear-both">-->
+                <!--<div class="form-group col-md-3">
+                    <label for="site-name"></label><br />
+                    <button type="button" class="btn btn-ar btn-primary" ng-disabled="myForm.$invalid" ng-click="Settle(bnk)">Settle</button>
+
+                </div>-->
+                <!--<button id="btnPrint" class="btn-sm btn-primary" ng-show="finalizebtn" style="float:right; margin-right: 15px;"> <span class="glyphicon glyphicon-print"> </span> Print Invoice</button>
+               
+            </div>-->
+       
+    </div>
+
+</div>
+<div class="modal fade " id="CheckStockDetails" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header w3-red">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title" style="text-align: center;">Check Details </h3>
+            </div>
+            <div class="tab-content">
+                <div class="row ng-scope">
+                    <div class="col-xs-6">
+                        <div class="form-group col-md-3">
+                            <table class="table table-bordered table-striped table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="th">
+
+                                                Select Order
+                                            </div>
+
+
+                                        <th>
+                                            <div class="th">DeliveryIssuanceId</div>
+                                        </th>
+                                        <th>
+                                            <div class="th">
+                                                People Name
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="th">
+                                                Check Number
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="th">
+                                                Check Amount
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="th">
+                                                Created Date
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="th">
+                                                Receive
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr data-ng-repeat="p in CheckStock ">
+                                        <td><input type="checkbox" id="checkorder" value="{{p.check}}" ng-checked="checkall11" ng-model="p.check" ng-change="Checkdetailchange(p)" /></td>
+                                        <td>{{p.DeliveryIssuanceId}}</td>
+                                        <td>{{p.Peoplename}}</td>
+                                        <td>{{p.checknumber}}</td>
+                                        <td>{{p.checkamount}}</td>
+                                        <td>{{p.CreatedDate}}</td>
+                                        <td><button class="btn-sm btn-primary" ng-click="openrecive(p)">Recived</button> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

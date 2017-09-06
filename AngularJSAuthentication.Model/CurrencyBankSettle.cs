@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
+namespace GenricEcommers.Models
+{
+    public class CurrencyBankSettle
+    {
+        [Key]
+        public int CurrencyBankSettleId { get; set; }
+        public int PeopleId { get; set; }
+        public string Name { get; set; }
+        public string Mobile { get; set; }
+        public string status { get; set; }
+        public double? OneRupee { get; set; }
+        public int? onerscount { get; set; }
+        public double? TwoRupee { get; set; }
+        public int? tworscount { get; set; }
+        public double? FiveRupee { get; set; }
+        public int? fiverscount { get; set; }
+        public double? TenRupee { get; set; }
+        public int? tenrscount { get; set; }
+        public double? TwentyRupee { get; set; }
+        public int? Twentyrscount { get; set; }
+        public double? fiftyRupee { get; set; }
+        public int? fiftyrscount { get; set; }
+        public double? HunRupee { get; set; }
+        public int? hunrscount { get; set; }
+        public double? fiveHRupee { get; set; }
+        public int? fivehrscount { get; set; }
+        public double? twoTHRupee { get; set; }
+        public int? twoTHrscount { get; set; }
+        public double Withdrawl { get; set; }
+        public string DepositedBankSlip { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        public bool Deleted { get; set; }
+ 
+    }
+}

@@ -1,0 +1,18 @@
+2017-09-06 12:26:41.1247 INFO start Warehouse: 
+2017-09-06 12:26:41.1548 INFO User ID : 1 , Company Id : 1
+2017-09-06 12:26:41.3149 INFO End  Warehouse: 
+2017-09-06 12:26:41.5861 INFO Get Company: 
+2017-09-06 12:26:41.5861 INFO End Get Company: 
+2017-09-06 12:26:41.6751 INFO start Warehouse: 
+2017-09-06 12:26:41.6751 INFO User ID : 1 , Company Id : 1
+2017-09-06 12:26:41.6751 INFO End  Warehouse: 
+2017-09-06 12:26:41.9804 INFO start get all Sales Executive: 
+2017-09-06 12:26:42.0244 INFO User ID : 1 , Company Id : 1
+2017-09-06 12:26:49.4279 INFO start Warehouse: 
+2017-09-06 12:26:49.4279 INFO User ID : 1 , Company Id : 1
+2017-09-06 12:26:49.4539 INFO start ItemMaster: 
+2017-09-06 12:26:49.4539 INFO End  Warehouse: 
+2017-09-06 12:26:49.4539 INFO User ID : 1 , Company Id : 1
+2017-09-06 12:26:49.6120 INFO End ItemMaster: 
+2017-09-06 12:27:00.5000 INFO start Slider: 
+2017-09-06 12:27:00.5290 INFO End  Slider: 

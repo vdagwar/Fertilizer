@@ -1,0 +1,326 @@
+﻿<style>
+    table, th, td {
+        text-align: center;
+    }
+</style>
+
+<style>
+    .ui-autocomplete-input {
+        border: none;
+        font-size: 14px;
+        /*width: 300px;
+    height: 24px;*/
+        margin-bottom: 5px;
+        padding-top: 2px;
+        border: 1px solid #DDD !important;
+        padding-top: 0px !important;
+        z-index: 1511;
+        position: relative;
+    }
+
+    .ui-menu .ui-menu-item a {
+        font-size: 12px;
+    }
+
+    .ui-autocomplete {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1510 !important;
+        float: left;
+        display: none;
+        min-width: 160px;
+        width: 160px;
+        padding: 4px 0;
+        margin: 2px 0 0 0;
+        list-style: none;
+        background-color: #ffffff;
+        border-color: #ccc;
+        border-color: rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        *border-right-width: 2px;
+        *border-bottom-width: 2px;
+    }
+
+    .ui-menu-item > a.ui-corner-all {
+        display: block;
+        padding: 3px 15px;
+        clear: both;
+        font-weight: normal;
+        line-height: 18px;
+        color: #555555;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    .ui-state-hover, .ui-state-active {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #0088cc;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        background-image: none;
+    }
+
+    #modalIns {
+        width: 500px;
+    }
+</style>
+
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong>
+                <span class="glyphicon glyphicon-th"> </span> Wallet
+            </strong>
+        </div><br />
+        <div class="form-group col-md-3">
+            <label for="site-name"></label><br />
+            <button class="btn-sm btn-primary" ng-click="exportData()"> <span class="glyphicon glyphicon-plus"> </span> Export  List</button>
+        </div>
+        <div>
+            <button class="btn btn-primary" ng-click="open()">
+                <span class="glyphicon glyphicon-plus"> </span> Add  Wallet
+            </button>
+           
+        
+            <button class="btn btn-primary" ng-click="openCashConvesion()" style="float:right">
+                <span class="glyphicon glyphicon-plus"> </span> Cash Conversion
+            </button>
+        </div><br /><br />
+        <table class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="th">
+                            S.No
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            CustomerId
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('CustomerId')"
+                                  data-ng-class="{active: row == 'CustomerId'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-CustomerId')"
+                                  data-ng-class="{active: row == '-CustomerId'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Sk Code
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('Skcode')"
+                                  data-ng-class="{active: row == 'Skcode'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-Skcode')"
+                                  data-ng-class="{active: row == '-Skcode'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Shop Name
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('ShopName')"
+                                  data-ng-class="{active: row == 'ShopName'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-ShopName')"
+                                  data-ng-class="{active: row == '-ShopName'}"></span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="th">
+                            Wallet Amount
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('TotalAmount')"
+                                  data-ng-class="{active: row == 'TotalAmount'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-TotalAmount')"
+                                  data-ng-class="{active: row == '-TotalAmount'}"></span>
+                        </div>
+                    </th>
+                  
+                    <th>
+                        <div class="th">
+                             Date
+                            <span class="glyphicon glyphicon-chevron-up"
+                                  data-ng-click="order('CreatedDate')"
+                                  data-ng-class="{active: row == 'CreatedDate'}"></span>
+                            <span class="glyphicon glyphicon-chevron-down"
+                                  data-ng-click="order('-CreatedDate')"
+                                  data-ng-class="{active: row == '-CreatedDate'}"></span>
+                        </div>
+                    </th>         
+                    <th>
+                        <div class="th">
+                            Edit
+                        </div>
+                    </th>                     
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="trade in wallets">
+                    <td>{{$index+1}}</td>
+                    <td>{{trade.CustomerId}}</td>
+                    <td>{{trade.Skcode}}</td>
+                    <td>{{trade.ShopName}}</td>
+                    <td>{{trade.TotalAmount}}</td>
+                    <td>{{trade.CreatedDate| date:'medium'}}</td>
+                    <td><button class="btn-sm btn-primary" ng-click="edit(trade)">Edit</button> </td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="table-footer">
+            <div class="row">
+                <div class="col-md-6 page-num-info">
+                    <span>
+                        Show
+                        <select data-ng-model="numPerPage"
+                                data-ng-options="num for num in numPerPageOpt"
+                                data-ng-change="onNumPerPageChange()"></select>
+                        entries per page
+                    </span>
+                </div>
+                <div class="col-md-6 text-right pagination-container">
+                    <pagination class="pagination-sm"
+                                page="currentPage"
+                                total-items="filteredStores.length"
+                                max-size="4"
+                                on-select-page="select(page)"
+                                items-per-page="numPerPage"
+                                rotate="false"
+                                boundary-links="true"></pagination>
+                </div>
+            </div>
+        </footer>
+    </section>
+</div>
+
+<script type="text/ng-template" id="myADDModal.html">
+    <form name="myFormSiteModal">
+        <div class="modal-header w1-red">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Create Wallet</h4>
+        </div>
+        <div class="modal-body" style="top:20px">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+            <div class="form-group col-md-12">
+                <div class="form-group row col-md-12">
+                    <label for="site-name">Enter customer skcode: </label>
+                    <input id="site-name" type="text" class="form-control" ng-model="skcode" placeholder="Enter skcode" />
+                    <!--<select class="form-control" id="site-name" ng-model="saveData.CustomerId">
+                        <option value="">----Choose Customer---</option>
+                        <option value="{{x.CustomerId}}" ng-repeat="x in customer">{{x.Skcode}} - {{x.ShopName}}</option>
+                    </select>-->
+                </div>
+                <div class="form-group row col-md-12"> 
+                    <button type="button" class="btn btn-ar btn-primary" ng-click="GetCustomer(skcode)">Confirm Customer</button>
+                </div>               
+                <div class="form-group row col-md-12">
+                    <label for="site-name">Add Wallet Amount:</label>
+                    <input id="site-name" type="text" class="form-control" ng-model="saveData.CreditAmount" placeholder="Enter Name" />
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="AddWallet()">Save</button>
+        </div>
+    </form>
+</script>
+
+<script type="text/ng-template" id="myEDITModal.html">
+    <form name="myFormSiteModal">
+        <div class="modal-header w1-red">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Edit Wallet</h4>
+        </div>
+        <div class="modal-body" style="top:20px">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+            <div class="form-group col-md-12">
+                <div class="form-group row">
+                    <label for="site-name">Wallet Amount:</label>
+                    <input id="site-name" type="text" class="form-control" ng-model="saveData.TotalAmount" readonly />
+                </div>
+                <div class="form-group row">
+                    <label for="site-name">Add Wallet Amount:</label>
+                    <input id="site-name" type="text" class="form-control" ng-model="saveData.CreditAmount" placeholder="Enter Name" />
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="AddWallet()">Save</button>
+        </div>
+    </form>
+</script>
+
+<script type="text/ng-template" id="cashConversionModal.html">
+    <form name="myFormSiteModal">
+        <div class="modal-header w1-red">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Add\Edit (Point To Rupee conversion)</h4>
+        </div>
+        <div class="modal-body" style="top:20px">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+            <div class="form-group col-md-12">
+                <div class="form-group row">
+                    <label for="site-name">Point :</label>
+                    <input id="site-name" type="text" class="form-control" ng-model="pointData.point" placeholder="Enter point" />
+                </div>
+                <div class="form-group row">
+                    <label for="site-name">INR:</label>
+                    <input id="site-name" type="text" class="form-control" ng-model="pointData.rupee" placeholder="Enter rupee" />
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="AddcashData()">Save</button>
+            <br /><br />
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <div class="form-group row">
+                    <strong>
+                        {{pointData.point}} point equal to {{pointData.rupee}} rupees
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </form>
+</script>

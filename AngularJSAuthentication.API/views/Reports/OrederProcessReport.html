@@ -1,0 +1,98 @@
+﻿<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Times New Roman';
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong>
+                <span class="glyphicon glyphicon-th"> </span> Order Process Reports
+            </strong>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <table>
+                        <tr>
+                            <th class="col-md-5"></th>
+                            <th>Number of orders</th>
+                            <th>value</th>
+                        </tr>
+                        <tr>
+                            <td>Pending</td>
+                            <td>{{dbReport.Pending}}</td>
+                            <td>{{dbReport.TotPendingAmnt|number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>Reddy to dispatch </td>
+                            <td>{{dbReport.Readytodispatch}}</td>
+                            <td>{{dbReport.TotReadytodispatchAmnt|number:2}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>issued </td>
+                            <td>{{dbReport.Issued}}</td>
+                            <td>{{ dbReport.TotIssuedAmnt|number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>Shipped</td>
+                            <td>{{ dbReport.Shipped|number:0}}</td>
+                            <td>{{ dbReport.TotShippedAmnt|number:2}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Delivery Cancelled</td>
+                            <td>{{dbReport.DeliveryCancelled}}</td>
+                            <td>{{dbReport.TotDeliveryCancelledAmnt|number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>Order Cancelled</td>
+                            <td>{{dbReport.OrderCancelled}}</td>
+                            <td>{{dbReport.TotOrderCancelledAmnt|number:2}}</td>
+                        </tr>
+                        <tr>
+                            <td>Delivered</td>
+                            <td>{{dbReport.Delivered}}</td>
+                            <td>{{dbReport.TotDeliveredAmnt|number:2}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Delivered Re-Dispatch</td>
+                            <td>{{dbReport.DeliveredRedispatched}}</td>
+                            <td>{{dbReport.TotDeliveredRedispatchedAmnt|number:2}}</td>
+
+                        </tr>
+                        <tr>
+                            <td>Sattle</td>
+                            <td>{{ dbReport.Sattled|number:0}}</td>
+                            <td>{{ dbReport.TotSattledAmnt|number:2}}</td>                         
+                        </tr>
+                        <tr>
+                            <td>Account settled</td>
+                            <td>{{ dbReport.AccountsettledCount|number:0}}</td>
+                            <td>{{ dbReport.AccountsettledAmount|number:2}}</td>
+                        </tr>
+                    </table>
+                  </div>
+                </div>
+              <br />
+            <br />
+        </div>
+    </section>
+</div>

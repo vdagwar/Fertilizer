@@ -1,0 +1,375 @@
+<div id="nav-wrapper" style="overflow-y: auto;">
+    <ul id="nav" data-ng-controller="NavCtrl" data-collapse-nav data-slim-scroll data-highlight-active>
+        <li>
+            <a href="#/dashboard" ng-show="(UserRole.role== 'Administrator')">
+                <i class="fa fa-dashboard">
+                    <span class="icon-bg bg-danger"></span>
+                </i>
+                <span data-i18n="Dashboard"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' )"><i class="glyphicon glyphicon-user"><span class="icon-bg bg-success"></span></i><span data-i18n="Admin"></span></a>
+            <ul>
+                <li>
+                    <a href="#/people"><i class="fa fa-caret-right"></i> <span data-i18n="People"></span></a>
+                </li>
+                <!--<li>
+                    <a href="#/role"><i class="fa fa-caret-right"></i> <span data-i18n="UserRole"></span></a>
+                </li>-->
+                <li>
+                    <a href="#/state"><i class="fa fa-caret-right"></i><span data-i18n="State "></span></a>
+                </li>
+                <li>
+                    <a href="#/city"><i class="fa fa-caret-right"></i><span data-i18n="City "></span></a>
+                </li>
+                <li>
+                    <a href="#/Slider"><i class="fa fa-caret-right"></i><span data-i18n="Slider"></span></a>
+                </li>
+                <!--<li>
+                    <a href="#/Multipleimage"><i class="fa fa-caret-right"></i><span data-i18n="Multipleimage "></span></a>
+                </li>-->
+                <!--<li>
+                    <a href="#/Message"><i class="fa fa-caret-right"></i><span data-i18n="Message"></span></a>
+                </li>-->
+                <!--<li>
+                    <a href="#/financialyear"><i class="fa fa-caret-right"></i><span data-i18n="Financial year"></span></a>
+                </li>-->
+                <li>
+                    <a href="#/Notification"><i class="fa fa-caret-right"></i><span data-i18n="Notification"></span></a>
+                </li>
+                <li>
+                    <a href="#/NotificationByDeviceId"><i class="fa fa-caret-right"></i><span data-i18n="Notification By DeviceId"></span></a>
+                </li>
+                <li><a href="#/SalesAsignDay"><i class="fa fa-caret-right"></i> <span data-i18n="Sales Asign Day"></span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Operations Administrator' || UserRole.role== 'Warehouse operations' )"><i class="glyphicon glyphicon-plane"><span class="icon-bg bg-success"></span></i><span data-i18n="Delivery"></span></a>
+            <ul>
+                <li>
+                    <a href="#/Vehicles"><i class="fa fa-caret-right"></i><span data-i18n="Vehicles"></span></a>
+                </li>
+                <li>
+                    <a href="#/DeliveryBoy"><i class="fa fa-caret-right"></i><span data-i18n="Delivery Boy"></span></a>
+                </li>
+                <li>
+                    <a href="#/deliveryCharge"><i class="fa fa-caret-right"></i><span data-i18n="Delivery Charge"></span></a>
+                </li>
+                <li>
+                    <a href="#/Delivery"><i class="fa fa-caret-right"></i><span data-i18n="Delivery"></span></a>
+                </li>
+                <li>
+                    <a href="#/ChangeDBoy"><i class="fa fa-caret-right"></i><span data-i18n="Change Delivery Boy"></span></a>
+                </li>
+				<li>
+                    <a href="#/DeliveryBoyHistory"><i class="fa fa-caret-right"></i><span data-i18n="Delivery Boy History"></span></a>
+                </li>
+                <li>
+                    <a href="#/VehicleAssissment"><i class="fa fa-caret-right"></i><span data-i18n="Vehicle Assissment"></span></a>
+                <li>
+                    <a href="#/CurrencySettle"><i class="fa fa-caret-right"></i><span data-i18n="CurrencySettle"></span></a>
+                </li>
+                <li>
+                    <a href="#/CurrencyStock"><i class="fa fa-caret-right"></i> <span data-i18n="CurrencyStock"></span></a>
+                </li>
+                <li>
+                    <a href="#/BankSettle"><i class="fa fa-caret-right"></i><span data-i18n="BankSettle"></span></a>
+                </li>
+                
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' || UserRole.role== 'Super Accounts' )"><i class="glyphicon glyphicon-text-width"><span class="icon-bg bg-success"></span></i><span data-i18n="Tax Master"></span></a>
+            <ul>
+                <li>
+                    <a href="#/TaxGroup"><i class="fa fa-caret-right"></i><span data-i18n="Tax Group"></span></a>
+                </li>
+                <li>
+                    <a href="#/TaxMaster"><i class="fa fa-caret-right"></i><span data-i18n="Tax Master"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Super Sales'|| UserRole.role== 'Administrator' || UserRole.role== 'City head admin' || UserRole.role== 'Warehouse head admin' || UserRole.role== 'Warehouse sales admin')"><i class="glyphicon glyphicon-user"><span class="icon-bg bg-success"></span><i aria-hidden="true"></i></i><span data-i18n="Customer"></span></a>
+            <ul>
+                <li><a href="#/CustomerCategory"><i class="fa fa-caret-right"></i><span data-i18n="Customer Category"></span></a></li>
+                <li><a href="#/customers"><i class="fa fa-caret-right"></i> <span data-i18n="Customer"></span></a></li>
+                <li><a href="#/CustomerIssue"><i class="fa fa-caret-right"></i> <span data-i18n="Customer Issue"></span></a></li>
+                <li><a href="#/notOrdered"><i class="fa fa-caret-right"></i> <span data-i18n="Not Ordered"></span></a></li>
+            </ul>
+        </li>
+        <li>    
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' || UserRole.role== 'City head admin' || UserRole.role== 'City buyer admin' || UserRole.role== 'Super buyer')"><i class="glyphicon glyphicon-user"><span class="icon-bg bg-success"></span></i><span data-i18n="Supplier"></span></a>
+            <ul>
+                <li>
+                    <a href="#/supplierCategory"><i class="fa fa-caret-right"></i><span data-i18n="Supplier Category"></span></a>
+                </li>
+                <li>
+                    <a href="#/supplier"><i class="fa fa-caret-right"></i><span data-i18n="Supplier"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' || UserRole.role== 'City accounts' || UserRole.role== 'Warehouse head admin' )"><i class="glyphicon glyphicon-road"><span class="icon-bg bg-success"></span></i><span data-i18n="Warehouse"></span></a>
+            <ul>
+                <li>
+                    <a href="#/warehouse"><i class="fa fa-caret-right"></i><span data-i18n="Add Warehouse"></span></a>
+                </li>
+                <li>
+                    <a href="#/cluster"><i class="fa fa-caret-right"></i><span data-i18n="Add Cluster"></span></a>
+                </li>
+                <li>
+                    <a href="#/WarehouseCategory"><i class="fa fa-caret-right"></i><span data-i18n="Warehouse Category"></span></a>
+                </li>
+                <li>
+                    <a href="#/WarehouseSupplier"><i class="fa fa-caret-right"></i><span data-i18n="Warehouse Supplier"></span></a>
+                </li>
+                <li>
+                    <a href="#/Area"><i class="fa fa-caret-right"></i><span data-i18n="Area"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Purchase Administrator'|| UserRole.role== 'Operations Administrator' || UserRole.role== 'Warehouse operations' )"><i class="glyphicon glyphicon-folder-close"><span class="icon-bg bg-success"></span></i><span data-i18n="Current Stock"></span></a>
+            <ul>
+                <li>
+                    <a href="#/CurrentStock"><i class="fa fa-caret-right"></i><span data-i18n="Current Stock"></span></a>
+
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Operations Administrator' || UserRole.role== 'Super operations' || UserRole.role== 'City accounts' || UserRole.role== 'Warehouse accounts' || UserRole.role== 'Warehouse operations' )"><i class="glyphicon glyphicon-shopping-cart"><span class="icon-bg bg-success"></span></i><span data-i18n="Order"></span></a>
+            <ul>
+                <li>
+                    <a href="#/orderMaster"><i class="fa fa-caret-right"></i><span data-i18n="Order Master"></span></a>
+                </li>
+                <li>
+                    <a href="#/orderSettle"><i class="fa fa-caret-right"></i><span data-i18n="Order Settle"></span></a>
+                </li>
+                <li>
+                    <a href="#/Redispatch"><i class="fa fa-caret-right"></i><span data-i18n="Redispatched Orders"></span></a>
+                </li>
+                <li>
+                    <a href="#/ShortageSettle"><i class="fa fa-caret-right"></i><span data-i18n="Shortage Settle History"></span></a>
+                </li>
+                <li>
+                    <a href="#/PendingOrder"><i class="fa fa-caret-right"></i><span data-i18n="Pending Order"></span></a>
+                </li>
+                <li>
+                    <a href="#/redeemMaster"><i class="fa fa-caret-right"></i><span data-i18n="Redeem Order"></span></a>
+                </li>
+                <li>
+                    <a href="#/excelorder"><i class="fa fa-caret-right"></i><span data-i18n="Excel Order"></span></a>
+                </li>
+                <li>
+                    <a href="#/OrederProcessReport"><i class="fa fa-caret-right"></i><span data-i18n="OP Report"></span></a>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role == 'Administrator'|| UserRole.role== 'Purchase Administrator'|| UserRole.role== 'Operations Administrator' || UserRole.role == 'City head admin' || UserRole.role== 'City buyer admin' || UserRole.role== 'Super buyer')"><i class="glyphicon glyphicon-compressed"><span class="icon-bg bg-success"></span></i><span data-i18n="Damage Stock"></span></a>
+            <ul>
+                <li>
+                    <a href="#/DamageStock"><i class="fa fa-caret-right"></i><span data-i18n="Transfer To DS"></span></a>
+                </li>
+                <li>
+                    <a href="#/CreateDamageOrder"><i class="fa fa-caret-right"></i><span data-i18n="Create DS Order"></span></a>
+                </li>
+                <li>
+                    <a href="#/DamageOrder"><i class="fa fa-caret-right"></i><span data-i18n="DS Ordered"></span></a>
+                </li>
+
+            </ul>
+        </li>  
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' || UserRole.role== 'City buyer admin' || UserRole.role== 'Warehouse head admin' || UserRole.role== 'Super buyer')"><i class="fa fa-pencil"><span class="icon-bg bg-success"></span></i><span data-i18n="Item Category"></span></a>
+            <ul>
+                <li>
+                    <a href="#/basecategory"><i class="fa fa-caret-right"></i><span data-i18n="Base Category"></span></a>
+
+                </li>
+                <li>
+                    <a href="#/category"><i class="fa fa-caret-right"></i><span data-i18n="Category"></span></a>
+
+                </li>
+                <li>
+                    <a href="#/subCategory"><i class="fa fa-caret-right"></i><span data-i18n="Sub-Category"></span></a>
+
+                </li>
+
+                <li>
+                    <a href="#/subsubcategory"><i class="fa fa-caret-right"></i><span data-i18n="Sub-Sub-Category"></span></a>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' || UserRole.role== 'City head admin' || UserRole.role== 'City buyer admin' || UserRole.role== 'Super buyer')"><i class="glyphicon glyphicon-folder-open"><span class="icon-bg bg-success"></span></i><span data-i18n="Item Master"></span></a>
+            <ul>
+                <li>
+                    <a href="#/itemMaster"><i class="fa fa-caret-right"></i><span data-i18n="Items Master"></span></a>
+                </li>
+                <li>
+                    <a href="#/editPrice"><i class="fa fa-caret-right"></i><span data-i18n="Edit Price"></span></a>
+                </li>
+                <li>
+                    <a href="#/MoveItems"><i class="fa fa-caret-right"></i><span data-i18n="Move Items"></span></a>
+                </li>
+               
+                <li>
+                    <a href="#/NppHistoryPrice"><i class="fa fa-caret-right"></i><span data-i18n="Net PP History"></span></a>
+                </li>
+            </ul>
+        </li>        
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Purchase Administrator' )"><i class="glyphicon glyphicon-briefcase"><span class="icon-bg bg-success"></span></i><span data-i18n="Reports"></span></a>
+            <ul>
+                <li>
+                    <a href="#/PurchaseOrderList"><i class="fa fa-caret-right"></i><span data-i18n="Purchase OrderList"></span></a>
+                    <a href="#/SearchPurchaseOrder"><i class="fa fa-caret-right"></i><span data-i18n="View PurchaseOrder"></span></a>
+                    <a href="#/OrderPaymentReport"><i class="fa fa-caret-right"></i><span data-i18n="Payment Report"></span></a>
+                    <a href="#/demandreport"><i class="fa fa-caret-right"></i><span data-i18n="Demand Report"></span></a>
+                    <a href="#/returnitem"><i class="fa fa-caret-right"></i><span data-i18n="Return Item"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role=='Statistics Administrator' )"><i class="glyphicon glyphicon-stats"><span class="icon-bg bg-success"></span></i><span data-i18n="StatisticalRep"></span></a>
+            <ul>
+                <!--<li>
+                    <a href="#/ProductReport"><i class="fa fa-caret-right"></i> <span data-i18n="Product Report"></span></a>
+                </li>-->
+                <li>
+                    <a href="#/DashboardReport"><i class="fa fa-caret-right"></i><span data-i18n="Dashboard Report"></span></a>
+                </li>
+                <li>
+                    <a href="#/LiveHubKpi"><i class="fa fa-caret-right"></i> <span data-i18n="LiveHub KPI’s"></span></a>
+                </li>
+                <li>
+                    <a href="#/Reports"><i class="fa fa-caret-right"></i> <span data-i18n="Reports(O\S)"></span></a>
+                </li>
+                <li>
+                    <a href="#/HubCity"><i class="fa fa-caret-right"></i> <span data-i18n="Comp(Hub\city)"></span></a>
+                </li>
+                <li>
+                    <a href="#/Comparison"><i class="fa fa-caret-right"></i> <span data-i18n="Comp(Ret\Hub\city)"></span></a>
+                </li>
+                <li>
+                    <a href="#/RetailersReport"><i class="fa fa-caret-right"></i> <span data-i18n="Retlr Report"></span></a>
+                </li>
+                <li>
+                    <a href="#/DeliveryBoyReport"><i class="fa fa-caret-right"></i> <span data-i18n="Del_Boy Report"></span></a>
+                </li>
+                <li>
+                    <a href="#/NetNargin"><i class="fa fa-caret-right"></i> <span data-i18n="Net Margin"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator')"><i class="glyphicon glyphicon-screenshot"><span class="icon-bg bg-success"></span></i><span data-i18n="CRM"></span></a>
+            <ul>
+                <li>
+                    <a href="#/CRM"><i class="fa fa-caret-right"></i><span data-i18n="CRM Report"></span></a>
+                </li>
+                <li>
+                    <a href="#/filtCustomer"><i class="fa fa-caret-right"></i><span data-i18n="CRM Customers"></span></a>
+                </li>
+                <li>
+                    <a href="#/actionTask"><i class="fa fa-caret-right"></i><span data-i18n="CRM Actions"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator' )"><i class="glyphicon glyphicon-gift"><span class="icon-bg bg-success"></span></i><span data-i18n="Offer"></span></a>
+            <ul>
+                <li>
+                    <a href="#/Offer"><i class="fa fa-caret-right"></i><span data-i18n="Offer Zone"></span></a>
+                </li>
+                <li>
+                    <a href="#/Reward"><i class="fa fa-caret-right"></i><span data-i18n="Reward Zone"></span></a>
+                </li>
+                <li>
+                    <a href="#/Wallet"><i class="fa fa-caret-right"></i><span data-i18n="Wallet Zone"></span></a>
+                </li>
+                <li>
+                    <a href="#/MileStone"><i class="fa fa-caret-right"></i><span data-i18n="Milestone Point"></span></a>
+                </li>
+                <li>
+                    <a href="#/RedeemItem"><i class="fa fa-caret-right"></i><span data-i18n="Redeem Item"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator')"><i class="glyphicon glyphicon-star-empty"><span class="icon-bg bg-success"></span></i><span data-i18n="Promotion"></span></a>
+            <ul>
+                <li>
+                    <a href="#/pramotion"><i class="fa fa-caret-right"></i><span data-i18n="Item Pramotion"></span></a>
+                </li>
+                <li>
+                    <a href="#/brandpramotion"><i class="fa fa-caret-right"></i><span data-i18n="Brand Pramotion"></span></a>
+                </li>
+                <li>
+                    <a href="#/billpramotion"><i class="fa fa-caret-right"></i><span data-i18n="Bill Pramotion"></span></a>
+                </li>
+            </ul>
+        </li>       
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Warehouse head admin' )"><i class="glyphicon glyphicon-registration-mark"><span class="icon-bg bg-success"></span></i><span data-i18n="Request"></span></a>
+            <ul>
+                <li>
+                    <a href="#/requestbrand"><i class="fa fa-caret-right"></i><span data-i18n="Request"></span></a>
+                    <a href="#/reqService"><i class="fa fa-caret-right"></i><span data-i18n="Request Service"></span></a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Warehouse head admin' )"><i class="glyphicon glyphicon-list-alt"><span class="icon-bg bg-success"></span></i><span data-i18n="Sales"></span></a>
+            <ul>
+                <li>
+                    <a href="#/SalesSettlement"><i class="fa fa-caret-right"></i><span data-i18n="Sales Settlement"></span></a>
+                    <a href="#/SalesSettlementHistory"><i class="fa fa-caret-right"></i><span data-i18n="Sale Settlmnt History"></span></a>
+                    <a href="#/SupplierIR"><i class="fa fa-caret-right"></i><span data-i18n="IR Settlement"></span></a>
+                    <a href="#/BounceCheq"><i class="fa fa-caret-right"></i><span data-i18n="Bounce Cheque"></span></a>
+                    <a href="#/salestarget"><i class="fa fa-caret-right"></i><span data-i18n="Sale Target"></span></a>
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Warehouse head admin' )"><i class="glyphicon glyphicon-record"><span class="icon-bg bg-success"></span></i><span data-i18n="Unit Economic"></span></a>
+            <ul>
+                <li>
+                    <a href="#/unitEconomic"><i class="fa fa-caret-right"></i><span data-i18n="Unit Economics"></span></a>
+                    <a href="#/unitEcoReport"><i class="fa fa-caret-right"></i><span data-i18n="UE Report"></span></a>
+                </li>
+            </ul>
+        </li>  
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator'|| UserRole.role== 'Supplier')"><i class="fa fa-pencil"><span class="icon-bg bg-success"></span></i><span data-i18n="Promo Point"></span></a>
+            <ul>
+                <li>
+                    <a href="#/Promo"><i class="fa fa-caret-right"></i><span data-i18n="PromoItems"></span></a>
+                </li>
+                <li>
+                    <a href="#/SupplierPromo"><i class="fa fa-caret-right"></i><span data-i18n="My Point"></span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form" ng-show="(UserRole.role== 'Administrator')"><i class="fa fa-pencil"><span class="icon-bg bg-success"></span></i><span data-i18n="News"></span></a>
+            <ul>
+                <li>
+                    <a href="#/News"><i class="fa fa-caret-right"></i><span data-i18n="News"></span></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div> 
+<style>
+    a:hover, a:active {
+        font-size: 125%;
+    }
+</style>

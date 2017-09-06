@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\NLog.config
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\AngularJSAuthentication.Model.dll.config
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\AngularJSAuthentication.Model.dll
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\AngularJSAuthentication.Model.pdb
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\NLog.dll
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\bin\Debug\NLog.xml
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\obj\Debug\AngularJSAuthentication.Model.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\obj\Debug\AngularJSAuthentication.Model.dll
+C:\Users\user\Desktop\Fertilizerapp\AngularJSAuthentication.Model\obj\Debug\AngularJSAuthentication.Model.pdb

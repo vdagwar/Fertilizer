@@ -1,0 +1,573 @@
+﻿<style>
+    /* =============================================================
+      GENERAL STYLES
+    ============================================================ */
+    @media screen {
+        #printSection {
+            display: none;
+        }
+    }
+
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #printSection, #printSection * {
+            visibility: visible;
+        }
+
+        #printSection {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .pad-top-botm {
+        padding-bottom: 40px;
+        padding-top: 22px;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+    /* =============================================================
+      PAGE STYLES
+    ============================================================ */
+
+    .contact-info span {
+        font-size: 14px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .contact-info hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .client-info {
+        font-size: 15px;
+    }
+
+    .ttl-amts {
+        text-align: right;
+        padding-right: 50px;
+    }
+
+    .containers {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    hr {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+</style>
+<script>
+    var $printSection
+    document.getElementById("btnPrint").onclick = function () {
+        //printElement(document.getElementById("divtoPrint"));
+        printDivThroughTrick("divtoPrint");
+
+        //var modThis = document.querySelector("#printSection .modifyMe");
+
+
+        onRouteChangeOff();
+        window.location.reload();
+
+    }
+
+    function printDivThroughTrick(divName) {
+
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+
+        if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+            var popupWin = window.open('', '_blank', 'width=800,height=600,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,titlebar=no');
+            popupWin.window.focus();
+            popupWin.document.write('<!DOCTYPE html><html><head>' +
+                '<link rel="stylesheet" type="text/css" href="style.css" />' +
+                '</head><body onload="window.print()"><div class="reward-body">' + printContents + '</div></html>');
+            popupWin.onbeforeunload = function (event) {
+                popupWin.close();
+                return '.\n';
+            };
+            popupWin.onabort = function (event) {
+                popupWin.document.close();
+                popupWin.close();
+            }
+        } else {
+            var popupWin = window.open('', '_blank', 'width=800,height=600');
+            popupWin.document.open();
+            popupWin.document.write('<html><head><link rel="stylesheet" type="text/css" href="style.css" /></head><body onload="window.print()">' + printContents + '</html>');
+            popupWin.document.close();
+        }
+        popupWin.document.close();
+
+        return true;
+    }
+
+    function printElement(elem) {
+        var domClone = elem.cloneNode(true);
+
+        $printSection = document.getElementById("printSection");
+
+        if (!$printSection) {
+            var $printSection = document.createElement("div");
+            $printSection.id = "printSection";
+            document.body.appendChild($printSection);
+        }
+
+        $printSection.innerHTML = "";
+        $printSection.appendChild(domClone);
+
+    }
+
+</script>
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong>
+                <span class="glyphicon glyphicon-th"> </span> Vehicle assissnment Orders
+            </strong>
+        </div>
+        <br />
+        <div>
+            <div class="form-group col-md-9 clear-both">
+                <div class="form-group col-md-3">
+                    <label for="site-name">All Delivery boys</label><br>
+                    <select class="form-control" id="site-name" ng-model="Mobile" ng-change="getdborders(Mobile)">
+                        <option value="">-Select-</option>
+                        <option value="{{db}}" ng-repeat="db in DBoys"> {{db.DisplayName}}</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name">Select Date Range</label><br>
+                    <div class="form-group">
+                        <div class='input-group date'>
+                            <input name="daterange" id="dat" type='text' title="Select Date" class="form-control date-picker" />
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="site-name"></label><br>
+                    <button class="btn-sm btn-primary" ng-disabled="chkdb" ng-click="getoldorders()"> Get  Assissments</button>
+                </div>
+            </div>
+
+        </div>
+        <section class="panel panel-default table-dynamic" id="">
+           
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <!--<div class="form-group col-md-3">
+                        <button class="btn-sm btn-primary" ng-disabled="chkdb" ng-click="getoldorders()"> Get  Assissments</button>
+                    </div>-->
+                </div>
+            </div>
+            <table id="allitems" class="table table-bordered table-striped table-responsive" ng-show="oldpords">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="th">Status</div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                CreatedDate
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                VehicleNumber
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                Product Types
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                View Details
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th">
+                                Summary
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="pod in oldorders">
+                        <td>{{pod.Status}}</td>
+                        <td>{{pod.CreatedDate}}</td>
+                        <td>{{pod.VehicleNumber}}</td>
+                        <td>{{pod.details.length}}</td>
+                        <td><button class="btn-sm btn-primary" ng-click="prodetails(pod)">View detais</button></td>
+                        <td><button class="btn-sm btn-primary" ng-click="summary(pod)">Summary</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        
+       
+
+    </section>
+    <section class="panel panel-default table-dynamic">
+
+        <div class="panel-heading">
+            <button id="btnPrint" class="btn-sm btn-primary" style="float:right; margin-right: 15px;"> <span class="glyphicon glyphicon-print"> </span> Print Invoice</button>
+
+            <div id="divtoPrint">
+                
+
+                <table id="allitems" class="table table-bordered table-striped table-responsive" ng-show="totalproducts">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="th">Product Name</div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    QTY
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Orders and QTYs
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Unit Price
+                                </div>
+                            </th>
+                            <th>
+                                <div class="th">
+                                    Total Amount
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-ng-repeat="prod in oldorders">
+                            <td>{{prod.itemname}}</td>
+                            <td>{{prod.qty}}</td>
+                            <td>{{prod.OrderQty}}</td>
+                            <td>{{prod.UnitPrice| number : 2}}</td>
+                            <td>{{prod.TotalAmt| number : 2}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+               
+            </div>
+
+        </div>
+    </section>
+    
+</div>
+
+<!-- /site tiles -->
+<!-- new site modal -->
+<script type="text/ng-template" id="myDboyModal.html">
+
+   
+    <form name="myFormSiteModal">
+       
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Vehicle assissment Summary</h4>
+        </div>
+
+        <div class="modal-body">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+
+            <div class="">
+               
+                <div id="printSectionId">
+                
+                   
+                    <table class="table table-bordered table-striped table-responsive" >
+                        <style>
+                            table, th, td {
+                                border: 1px solid black;
+                            }
+                        </style>
+
+                        <thead>
+                            <tr>
+                                <p style="color: red;">Delivered : (DBOy - {{DBoysData.DisplayName}} - {{DBoysData.Mobile}} - Date:{{date |date:'medium'}})</p>
+                                <td colspan="2">Delivered {{TotalDeliveredOrder}}</td>
+                                <td>Cash Amount {{TotalDeliveredCashAmount}}</td>
+                                <td colspan="2">Cheque Amount {{TotalDeliveredChequeAmount}}</td>
+                                <td>Delivered Amount {{TotalDeliveredOrderAmount}}</td>
+                                
+                            </tr>
+                       
+                            
+                            <tr>
+                                <th>
+                                    <div class="th">
+                                        OrderId
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Skcode
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="th">
+                                        Cash Amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Cheque Amount
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Cheque No
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Comment
+                                    </div>
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+
+                            <tr data-ng-repeat="trade in delivereddata">
+                                <td>{{trade.OrderId}}</td>
+                                <td>{{trade.Skcode}}</td>
+                                <td>{{trade.cashAmount}}</td>
+                                <td>{{trade.chequeAmount}}</td>
+                                <td>{{trade.chequeNo}}</td>
+                                <td>{{trade.comments}}</td>   
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table class="table table-bordered table-striped table-responsive">
+                        <thead>
+                            <tr>
+                               <p>Canceled</p>
+                                <td>Total canceld order {{TotalCancelOrder}}</td>
+                                <td>Total canceld Qty {{TotalCanceledOrderqty}}</td>
+                                <td>Total canceld Amount {{TotalCanceledOrderAmount}} </td>
+                                
+                            </tr>
+
+                            <tr>
+                                <!--<th>
+                                    <div class="th">
+                                        OrderId
+                                    </div>
+                                </th>-->
+                                <th>
+                                    <div class="th">
+                                        Orders and QTYs
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Item Name
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="th">
+                                       Total quantity
+                                    </div>
+                                </th>
+
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr data-ng-repeat="trades in allproducts">
+                                <!--<td>{{trades.OrderId}}</td>-->
+                                <td>{{trades.OrderQty}}</td>
+                               <td>{{trades.itemname}}</td>
+                                <td>{{trades.qty}}</td>
+                                
+                            </tr>
+                        </tbody>
+                         </table>
+                    <table class="table table-bordered table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <p>ReDispatch</p>
+                                <td>Total ReDispatch Order {{TotalRedispatchOrder}}</td>
+                                <td>Total ReDispatch Qty {{TotalRedispatchOrderqty}}</td>
+                                <td>Total ReDispatch Amount {{TotalRedispatchedOrderAmount}}</td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <div class="th">
+                                        Orders and QTYs
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th">
+                                        Item Name
+                                    </div>
+                                </th>
+
+                                <th>
+                                    <div class="th">
+                                        Total quantity
+                                    </div>
+                                </th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="r in allproductredispatched">
+                                <!--<td>{{r.OrderId}}</td>
+                                <td>{{r.Skcode}}</td>-->
+                                <td>{{r.OrderQty}}</td>
+                                <td>{{r.itemname}}</td>
+                                <td>{{r.qty}}</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+</div>
+</div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Ok</button>
+            <button ng-click="printToCart('printSectionId')" class="btn-sm btn-primary">Print</button>
+            </div>
+    </form>
+</script>
+
+<script type="text/ng-template" id="myDboyModal1.html">
+
+    <form name="myFormSiteModal">
+
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="cancel()" data-dismiss="modal">
+                <span class="icon icon-x" aria-hidden="true">
+                </span>
+                <span class="sr-only">Close</span>
+            </button>
+            <button aria-hidden="true" class="close" data-dismiss="modal" type="button" ng-click="ok()">×</button>
+            <h4 class="modal-title">Products Details</h4>
+        </div>
+
+        <div class="modal-body">
+            <div class="colasdasdasd">
+                <p style="color: #FF0000" ng-show="gotErrors"> Unable To Create Site  ! Please Try Again</p>
+                <p style="color: #FF0000" ng-show="AlreadyExist"> Site Already Exist  ! Please Try Another Site</p>
+            </div>
+
+
+            <div class="">
+                <!--<div class="row">
+                    <div class="col-md-4">Issuance Orders:-</div>
+                    <div class="col-md-1" ng-repeat="dd in Orderids">{{dd}}</div>
+                </div>-->
+                <div class="row">
+                    <div class="col-xs-6">
+                        <table class="table table-bordered table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="th">
+                                            Product Name
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="th">
+                                            QTY
+                                        </div>
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr data-ng-repeat="pd in orderdetails">
+                                    <td>{{pd.itemname}}</td>
+                                    <td>{{pd.qty}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-xs-6">
+                        <table class="table table-bordered table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="th">
+                                            S.No
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="th">
+                                            Issuance Orders Ids:-
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-ng-repeat="dd in Orderids">
+                                    <td>{{ $index+1 }}</td>
+                                    <td>{{dd}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-ar btn-warning" ng-click="cancel()" data-dismiss="modal">Ok</button>
+        </div>
+    </form>
+</script>
+
+

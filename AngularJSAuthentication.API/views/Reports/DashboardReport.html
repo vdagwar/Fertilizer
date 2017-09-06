@@ -1,0 +1,151 @@
+﻿<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Times New Roman';
+   
+    }
+
+    td, th {
+        border: 3px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading">
+            <strong>
+                <span class="glyphicon glyphicon-th"> </span> Statistics
+            </strong>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4" style="float:left!important; font-size:18px;">
+                    <div class="col-md-8">
+                        <label for="site-name">Warehouse:</label><br />
+                        <select class="form-control" id="site-name" ng-model="Warehouseid" ng-change="selectedwarehouse()">
+                            <option value="">--select--</option>
+                            <option value="{{a.Warehouseid}}" ng-repeat="a in warehouse" ng-selected="Warehouseid == a.Warehouseid">{{a.WarehouseName}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 pull-right">
+                        <button type="button" class="btn btn-ar btn-success" ng-click="PostDashData()" data-dismiss="modal" style="border-radius:12px;">Avg Inventory</button>
+                    </div>
+                </div>
+                <br />
+            </div><br />
+            <div class="row">
+                <div class="col-md-12">
+
+                    <table>
+                        <tr>
+                            <th class="col-md-5"></th>
+                            <th>Total</th>
+                            <th>Last Month</th>
+                            <th>This Month</th>
+                            <th>Yesterday</th>
+                            <th>Today</th>
+                        </tr>
+                        <tr>
+                            <td>New Customers (in Number)</td>
+                            <td>{{custdata.TotalCust}}</td>
+                            <td>{{custdata.LMonthCust}}</td>
+                            <td>{{custdata.MonthCust}}</td>
+                            <td>{{custdata.YesturdayCust}}</td>
+                            <td>{{custdata.TodayCust}}</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Active Customers (in Number)</td>
+                            <td>{{custdata.ActiveCust}}</td>
+                            <td>{{custdata.AcLMonthCust}}</td>
+                            <td>{{custdata.AcMonthCust}}</td>
+                            <td>{{custdata.AcYesterdayCust}}</td>
+                            <td>{{custdata.AcTodayCust}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sale <i class="fa fa-rupee"></i></td>
+                            <td>{{custdata.OSale|number:0}}</td>
+                            <td>{{custdata.MOLSale|number:0}}</td>
+                            <td>{{custdata.MOSale|number:0}}</td>
+                            <td>{{custdata.ToYdOSale|number:0}}</td>
+                            <td>{{custdata.TodOSale|number:0}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sale/Active Customer (in Number)</td>
+                            <td>{{custdata.OSale/custdata.ActiveCust |number:0}}</td>
+                            <td>{{custdata.MOLSale/custdata.AcLMonthCust |number:0}}</td>
+                            <td>{{custdata.MOSale/custdata.AcMonthCust |number:0}}</td>
+                            <td>{{custdata.ToYdOSale/custdata.AcYesterdayCust |number:0}}</td>
+                            <td>{{custdata.TodOSale/custdata.AcTodayCust |number:0}}</td>
+                            
+                           
+                        </tr>
+                        <tr>
+                            <td>Order till date (in Number)</td>
+                            <td>{{custdata.Ordered}}</td>
+                            <td>{{custdata.MLOrdered}}</td>
+                            <td>{{custdata.MOrdered}}</td>
+                            <td>{{custdata.ToYOrdered}}</td>
+                            <td>{{custdata.TodOrdered}}</td>
+                        </tr>
+                        <tr>
+                            <td>Order Delivered within 48Hr (in Number)</td>
+                            <td>{{custdata.O48deliver}}</td>
+                            <td>-</td>
+                            <td>--</td>
+                            <td>{{custdata.O48Ydeliver}}</td>
+                            <td>{{custdata.O48Tdeliver}}</td>
+                        </tr>
+                        <tr>
+                            <td>Order Sattled (in Number)</td>
+                            <td>{{custdata.Odeliver}}</td>
+                            <td>{{custdata.LMOdeliver}}</td>
+                            <td>{{custdata.MOdeliver}}</td>
+                            <td>{{custdata.ToOYdeliver}}</td>
+                            <td>{{custdata.ToOdeliver}}</td>
+                        </tr>
+                        <tr>
+                            <td>Average Inventory <i class="fa fa-rupee"></i></td>
+                            <td>{{custdata.AvgInv |number:0}}</td>
+                            <td>-</td>
+                            <td>{{custdata.MAvInv |number:0}}</td>
+                            <td>{{custdata.ToYAvgInv |number:0}}</td>
+                            <td>{{custdata.ToAvgInv |number:0}}</td>
+                        </tr>
+                        <tr>
+                            <td>Inventory turnover Day (in Number)</td>
+                            <td>{{custdata.InvTurn |number:0}}</td>
+                            <td>-</td>
+                            <td>{{custdata.MInvTurn |number:0}}</td>
+                            <td>{{custdata.ToYInvTurn |number:0}}</td>
+                            <td>{{custdata.ToInvTurn |number:0}}</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>Retailer > 2 order (in %)</td>
+                            <td>{{(custdata.ActiveCust2/custdata.ActiveCust)*100 |number:0}}</td>
+                            <td>{{(custdata.AcLMonthCust2/custdata.AcLMonthCust)*100 |number:0}}</td>
+                            <td>{{(custdata.AcMonthCust2/custdata.AcMonthCust)*100 |number:0}}</td>
+                            <td>{{(custdata.AcYesterdayCust2/custdata.AcYesterdayCust)*100 |number:0}}</td>
+                            <td>{{(custdata.AcTodayCust2/custdata.AcTodayCust)*100 |number:0}}</td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+            </div>
+            <br />
+            <br />
+        </div>
+    </section>
+</div>

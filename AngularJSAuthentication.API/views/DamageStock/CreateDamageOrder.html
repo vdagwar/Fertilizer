@@ -1,0 +1,135 @@
+﻿<head>
+    <style>
+        #dragandrophandler {
+            border: 2px dashed #92AAB0;
+            width: 650px;
+            height: 200px;
+            color: #92AAB0;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px 0px 10px 10px;
+            font-size: 200%;
+            display: table-cell;
+        }
+
+        .progressBar {
+            width: 200px;
+            height: 22px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 0px 10px 5px 5px;
+            vertical-align: top;
+        }
+
+            .progressBar div {
+                height: 100%;
+                color: #fff;
+                text-align: right;
+                line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+                width: 0;
+                background-color: #0ba1b5;
+                border-radius: 3px;
+            }
+
+        .statusbar {
+            border-top: 1px solid #A9CCD1;
+            min-height: 25px;
+            width: 700px;
+            padding: 10px 10px 0px 10px;
+            vertical-align: top;
+        }
+
+            .statusbar:nth-child(odd) {
+                background: #EBEFF0;
+            }
+
+        .filename {
+            display: inline-block;
+            vertical-align: top;
+            width: 250px;
+        }
+
+        .filesize {
+            display: inline-block;
+            vertical-align: top;
+            color: #30693D;
+            width: 100px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+        .abort {
+            background-color: #A8352F;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            display: inline-block;
+            color: #fff;
+            font-family: arial;
+            font-size: 13px;
+            font-weight: normal;
+            padding: 4px 15px;
+            cursor: pointer;
+            vertical-align: top;
+        }
+        img.img80_80 
+        {
+    width: 60px;
+    height: 40px;
+}
+    </style>
+</head>
+<div class="page page-table">
+    <section class="panel panel-default table-dynamic">
+        <div class="panel-heading"> <strong> <span class="glyphicon glyphicon-th"> </span>Create Order For damage stock</strong> </div>
+        <br />
+        <div class="form-group">
+            <label for="site-name">Creat Damage Order</label><br />
+        </div>
+        <div class="form-group col-md-3">
+          <p>Select</p>
+       <select class="form-control" id="site-name" name="Customers Name" ng-model="Customerid" data-ng-change="getitemMaster(c)">
+                <option value="">---SELECT---</option>
+                <option value="{{c}}" ng-model="selecteditem.CustName"  ng-repeat="c in customers"> {{c.Name}}</option>
+       </select>
+        </div>
+        <div class="form-group col-md-3">
+            <p>Select Item</p>  
+           <select class="form-control" id="site-name" name="Item Name"  ng-model="cp.ItemId" data-ng-change="filtitemMaster(cp)">
+                <option value="">---SELECT---</option>
+                <option value="{{cp}}"  ng-repeat="cp in DamageItemData"> {{cp.ItemName}}</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="qty">Qty</label>
+<input class="form-control" type="text" ng-model="selecteditem.DamageInventory" value="{{selecteditem.DamageInventory}}" ng-change="AmountCalculation(selecteditem)"/>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="price">Unit Price</label>
+            <input class="form-control" type="text" ng-model="selecteditem.UnitPrice" value="{{selecteditem.UnitPrice}}" ng-change="AmountCalculation(selecteditem)" />
+        </div>
+        <div class="form-group col-md-2">
+            <label for="price">Total Amount</label>
+            <input id="tamount" class="form-control" type="text" ng-model="TotalAmount" value="{{TotalAmount}}" disabled />
+        </div>
+        <div class="form-group col-md-1"></div>
+        <div class="form-group col-md-3">
+            <label for="site-name" ></label>
+            <button type="button" class="btn btn-ar btn-primary" ng-click="AddDOrder(selecteditem)"> Create Order </button>
+        </div>
+      
+        <table class="table table-bordered table-striped table-responsive">
+            <thead>
+            </thead>
+        </table>
+      
+    </section>
+</div>
+
+
+
+
+
+
